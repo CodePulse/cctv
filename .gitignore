@@ -1,0 +1,19 @@
+# Ignore configuration files that may contain sensitive information.
+sites/*/settings*.php
+
+# Ignore paths that contain user-generated content.
+sites/*/files
+sites/*/private
+
+
+# Ignore paths that contain generated content.
+public_html/cache/
+public_html/files/
+public_html/sites/*/files
+public_html/sites/*/private
+
+/.settings
+/.buildpath
+/.project
+/.idea
+/public_html/.idea
