@@ -3,4 +3,12 @@
 img, media {
   max-width: 100%; }
 
+/* line 2, ../sass/base/_sitewide.scss */
+body {
+  background: #EFEFEF; }
+
+/* line 2, ../sass/components/_branding.scss */
+.site-logo img {
+  max-width: 310px; }
+
 /*# sourceMappingURL=omega-codepulse.no-query.css.map */
