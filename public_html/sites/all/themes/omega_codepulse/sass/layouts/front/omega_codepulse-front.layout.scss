@@ -1,0 +1,20 @@
+@import "compass";
+@import "breakpoint";
+@import "singularitygs";
+
+@import "variables/**/*";
+
+
+.l-page {
+  width:1200px;
+  margin: 0 auto;
+
+  header {
+    @include grid-span(4,3);
+    margin: 0 auto;
+  }
+  .l-who {
+    background:red;
+    color:pink;
+  }
+}

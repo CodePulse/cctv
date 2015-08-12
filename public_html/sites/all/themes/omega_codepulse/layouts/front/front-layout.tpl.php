@@ -82,6 +82,7 @@
 
     <?php print render($page['navigation']); ?>
   </header>
+  </div>
 
   <div class="l-slider">
     <div class="l-slider-content">
@@ -90,9 +91,12 @@
   </div>
 
   <div class="l-who">
+    <div class="l-page">
+
     <div class="l-who-content">
       <?php print render($page['who']); ?>
     </div>
+      </div>
   </div>
 
   <div class="l-services">

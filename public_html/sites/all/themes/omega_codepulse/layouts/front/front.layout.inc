@@ -11,3 +11,8 @@ regions[slider] = Slider
 regions[who] = Who we are
 regions[services] = Services
 regions[footer] = Footer
+
+; ========================================
+; Styles
+; ========================================
+stylesheets[all][] = css/layouts/front/omega_codepulse-front.layout.css
