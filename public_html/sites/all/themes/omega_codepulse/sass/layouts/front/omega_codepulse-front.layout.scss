@@ -5,18 +5,32 @@
 .l-page {
 }
 
-.l-slider{
+.l-slider {
 }
 
 .l-slider-content {
-  overflow:hidden;
-  max-height:350px;
+  overflow: hidden;
+  max-height: 350px;
 }
 
 .l-page-container {
-  width:1200px;
+  width: 1200px;
   @include clearfix;
-  .l-header{
-    @include grid-span(9,2)
+  .l-header {
+    @include grid-span(9, 4);
+    @include clearfix;
+
+    .l-branding{
+      @include grid-span(12, 1);
+    }
+    .l-menu{
+      @include grid-span(12, 1);
+    }
+    .l-logo {
+      @include grid-span(8, 1)
+    }
+    .l-region--branding {
+      @include grid-span(4, 9)
+    }
   }
 }
