@@ -5,7 +5,8 @@ img, media {
 
 /* line 2, ../sass/base/_sitewide.scss */
 body {
-  background: #EFEFEF; }
+  background: #fefefe;
+  color: #6d6e71; }
 
 /* line 2, ../sass/components/_branding.scss */
 .site-logo img {

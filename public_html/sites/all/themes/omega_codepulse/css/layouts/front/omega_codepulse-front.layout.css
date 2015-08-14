@@ -1,19 +1,19 @@
-/* No files to import found in variables/**\/* */
-/* line 8, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
-.l-page {
+/* line 11, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+.l-slider-content {
+  overflow: hidden;
+  max-height: 350px; }
+
+/* line 16, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+.l-page-container {
   width: 1200px;
-  margin: 0 auto; }
-  /* line 12, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
-  .l-page header {
-    width: 32.20339%;
+  overflow: hidden;
+  *zoom: 1; }
+  /* line 19, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  .l-page-container .l-header {
+    width: 74.57627%;
     float: left;
     margin-right: -100%;
-    margin-left: 16.94915%;
-    clear: none;
-    margin: 0 auto; }
-  /* line 16, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
-  .l-page .l-who {
-    background: red;
-    color: pink; }
+    margin-left: 8.47458%;
+    clear: none; }
 
 /*# sourceMappingURL=omega_codepulse-front.layout.css.map */
