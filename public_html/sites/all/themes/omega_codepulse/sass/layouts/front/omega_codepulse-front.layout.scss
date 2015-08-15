@@ -12,89 +12,78 @@
   overflow: hidden;
   max-height: 350px;
 }
+.l-menu{
+  .block__title{
+    display:none;
+  }
+  ul {
+    padding:0;
+    li{
+      display:inline-block;
+      margin-right:25px;
+    }
+  }
+}
 
-.l-page-container {
-  width: 1200px;
-  @include clearfix;
-  .l-header {
-    @include grid-span(9, 4);
+@include breakpoint(960px){//medium
+  body{
+    background:red;
+  }
+  .l-page-container {
+    width: 960px;
     @include clearfix;
+    .l-header {
+      @include grid-span(9, 4);
+      @include clearfix;
 
-    .l-branding{
-      @include grid-span(12, 1);
-    }
-    .l-menu{
-      @include grid-span(12, 1);
-    }
-    .l-logo {
-      @include grid-span(8, 1)
-    }
-    .l-region--branding {
-      @include grid-span(4, 9)
+      .l-branding{
+        @include grid-span(12, 1);
+      }
+      .l-menu{
+        @include grid-span(12, 1);
+      }
+      .l-logo {
+        @include grid-span(8, 1)
+      }
+      .l-region--branding {
+        @include grid-span(4, 9)
+      }
     }
   }
+
+}
+@include breakpoint(1200px) { //desktop
+  body{
+    background:green;
+  }
+  .l-page-container {
+    width: 1200px;
+    margin:0 auto;
+  @include clearfix;
+  .l-page-wrapper{
+    @include grid-span(12, 1);
+  }
+    .l-header {
+      @include grid-span(12, 1);
+      @include clearfix;
+
+      .l-branding{
+        @include grid-span(12, 1);
+      }
+      .l-menu{
+        @include grid-span(12, 1);
+      }
+      .l-logo {
+        @include grid-span(9, 1)
+      }
+      .l-region--branding {
+        @include grid-span(3, 10)
+      }
+    }
+  }
+  .l-who{
+    @include grid-span(12, 1);
+  }
+
 }
 
-.social-media {
-  li {
-    list-style: none;
-    display:inline-block;
-  }
-  li.facebook {
-    background-image:url('/sites/all/themes/omega_codepulse/images/Icons/social/3x_Retina_HD/Facebook_light_grey_3x.png');
-    background-repeat: no-repeat;
-    background-size:40px;
-    a {
-      display:block;
-      float:left;
-      height:40px;
-      width:40px;
-      outline:none;
-      span{
-        display:none;
-      }
-    }
-    &:hover{
-      background-image:url('/sites/all/themes/omega_codepulse/images/Icons/social/3x_Retina_HD/Facebook_main_blue_3x.png');
-    }
-
-  }
-  li.twitter {
-    background-image:url('/sites/all/themes/omega_codepulse/images/Icons/social/3x_Retina_HD/Twitter_light_grey_3x.png');
-    background-repeat: no-repeat;
-    background-size:40px;
-    a {
-      display:block;
-      float:left;
-      height:40px;
-      width:40px;
-      outline:none;
-      span{
-        display:none;
-      }
-    }
-    &:hover{
-      background-image:url('/sites/all/themes/omega_codepulse/images/Icons/social/3x_Retina_HD/Twitter_main_blue_3x.png');
-    }
-
-  }
-  li.pinterest {
-    background-image:url('/sites/all/themes/omega_codepulse/images/Icons/social/3x_Retina_HD/Pinterest_light_grey_3x.png');
-    background-repeat: no-repeat;
-    background-size:40px;
-    a {
-      display:block;
-      float:left;
-      height:40px;
-      width:40px;
-      outline:none;
-      span{
-        display:none;
-      }
-    }
-    &:hover{
-      background-image:url('/sites/all/themes/omega_codepulse/images/Icons/social/3x_Retina_HD/Pinterest_main_blue_3x.png');
-    }
-
-  }
-}

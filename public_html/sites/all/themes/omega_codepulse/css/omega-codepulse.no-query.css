@@ -12,4 +12,63 @@ body {
 .site-logo img {
   max-width: 310px; }
 
+/* line 2, ../sass/components/_social_media.scss */
+.social-media li {
+  list-style: none;
+  display: inline-block; }
+/* line 6, ../sass/components/_social_media.scss */
+.social-media li.facebook {
+  background-image: url("/sites/all/themes/omega_codepulse/images/Icons/social/3x_Retina_HD/Facebook_light_grey_3x.png");
+  background-repeat: no-repeat;
+  background-size: 40px; }
+  /* line 10, ../sass/components/_social_media.scss */
+  .social-media li.facebook a {
+    display: block;
+    float: left;
+    height: 40px;
+    width: 40px;
+    outline: none; }
+    /* line 16, ../sass/components/_social_media.scss */
+    .social-media li.facebook a span {
+      display: none; }
+  /* line 20, ../sass/components/_social_media.scss */
+  .social-media li.facebook:hover {
+    background-image: url("/sites/all/themes/omega_codepulse/images/Icons/social/3x_Retina_HD/Facebook_main_blue_3x.png"); }
+/* line 25, ../sass/components/_social_media.scss */
+.social-media li.twitter {
+  background-image: url("/sites/all/themes/omega_codepulse/images/Icons/social/3x_Retina_HD/Twitter_light_grey_3x.png");
+  background-repeat: no-repeat;
+  background-size: 40px; }
+  /* line 29, ../sass/components/_social_media.scss */
+  .social-media li.twitter a {
+    display: block;
+    float: left;
+    height: 40px;
+    width: 40px;
+    outline: none; }
+    /* line 35, ../sass/components/_social_media.scss */
+    .social-media li.twitter a span {
+      display: none; }
+  /* line 39, ../sass/components/_social_media.scss */
+  .social-media li.twitter:hover {
+    background-image: url("/sites/all/themes/omega_codepulse/images/Icons/social/3x_Retina_HD/Twitter_main_blue_3x.png"); }
+/* line 44, ../sass/components/_social_media.scss */
+.social-media li.pinterest {
+  background-image: url("/sites/all/themes/omega_codepulse/images/Icons/social/3x_Retina_HD/Pinterest_light_grey_3x.png");
+  background-repeat: no-repeat;
+  background-size: 40px; }
+  /* line 48, ../sass/components/_social_media.scss */
+  .social-media li.pinterest a {
+    display: block;
+    float: left;
+    height: 40px;
+    width: 40px;
+    outline: none; }
+    /* line 54, ../sass/components/_social_media.scss */
+    .social-media li.pinterest a span {
+      display: none; }
+  /* line 58, ../sass/components/_social_media.scss */
+  .social-media li.pinterest:hover {
+    background-image: url("/sites/all/themes/omega_codepulse/images/Icons/social/3x_Retina_HD/Pinterest_main_blue_3x.png"); }
+
 /*# sourceMappingURL=omega-codepulse.no-query.css.map */

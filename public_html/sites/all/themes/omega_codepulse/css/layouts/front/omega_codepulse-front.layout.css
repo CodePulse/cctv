@@ -4,105 +4,125 @@
   max-height: 350px; }
 
 /* line 16, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
-.l-page-container {
-  width: 1200px;
-  overflow: hidden;
-  *zoom: 1; }
-  /* line 19, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
-  .l-page-container .l-header {
-    width: 74.57627%;
+.l-menu .block__title {
+  display: none; }
+/* line 19, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+.l-menu ul {
+  padding: 0; }
+  /* line 21, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  .l-menu ul li {
+    display: inline-block;
+    margin-right: 25px; }
+
+@media (min-width: 960px) {
+  /* line 29, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  body {
+    background: red; }
+
+  /* line 32, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  .l-page-container {
+    width: 960px;
+    overflow: hidden;
+    *zoom: 1; }
+    /* line 35, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    .l-page-container .l-header {
+      width: 74.57627%;
+      float: right;
+      margin-left: 0;
+      margin-right: 0;
+      clear: none;
+      overflow: hidden;
+      *zoom: 1; }
+      /* line 39, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+      .l-page-container .l-header .l-branding {
+        width: 100%;
+        float: right;
+        margin-left: 0;
+        margin-right: 0;
+        clear: none; }
+      /* line 42, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+      .l-page-container .l-header .l-menu {
+        width: 100%;
+        float: right;
+        margin-left: 0;
+        margin-right: 0;
+        clear: none; }
+      /* line 45, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+      .l-page-container .l-header .l-logo {
+        width: 66.10169%;
+        float: left;
+        margin-right: -100%;
+        margin-left: 0;
+        clear: none; }
+      /* line 48, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+      .l-page-container .l-header .l-region--branding {
+        width: 32.20339%;
+        float: right;
+        margin-left: 0;
+        margin-right: 0;
+        clear: none; } }
+@media (min-width: 1200px) {
+  /* line 56, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  body {
+    background: green; }
+
+  /* line 59, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  .l-page-container {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    *zoom: 1; }
+    /* line 63, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    .l-page-container .l-page-wrapper {
+      width: 100%;
+      float: right;
+      margin-left: 0;
+      margin-right: 0;
+      clear: none; }
+    /* line 66, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    .l-page-container .l-header {
+      width: 100%;
+      float: right;
+      margin-left: 0;
+      margin-right: 0;
+      clear: none;
+      overflow: hidden;
+      *zoom: 1; }
+      /* line 70, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+      .l-page-container .l-header .l-branding {
+        width: 100%;
+        float: right;
+        margin-left: 0;
+        margin-right: 0;
+        clear: none; }
+      /* line 73, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+      .l-page-container .l-header .l-menu {
+        width: 100%;
+        float: right;
+        margin-left: 0;
+        margin-right: 0;
+        clear: none; }
+      /* line 76, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+      .l-page-container .l-header .l-logo {
+        width: 74.57627%;
+        float: left;
+        margin-right: -100%;
+        margin-left: 0;
+        clear: none; }
+      /* line 79, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+      .l-page-container .l-header .l-region--branding {
+        width: 23.72881%;
+        float: right;
+        margin-left: 0;
+        margin-right: 0;
+        clear: none; }
+
+  /* line 84, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  .l-who {
+    width: 100%;
     float: right;
     margin-left: 0;
     margin-right: 0;
-    clear: none;
-    overflow: hidden;
-    *zoom: 1; }
-    /* line 23, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
-    .l-page-container .l-header .l-branding {
-      width: 100%;
-      float: right;
-      margin-left: 0;
-      margin-right: 0;
-      clear: none; }
-    /* line 26, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
-    .l-page-container .l-header .l-menu {
-      width: 100%;
-      float: right;
-      margin-left: 0;
-      margin-right: 0;
-      clear: none; }
-    /* line 29, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
-    .l-page-container .l-header .l-logo {
-      width: 66.10169%;
-      float: left;
-      margin-right: -100%;
-      margin-left: 0;
-      clear: none; }
-    /* line 32, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
-    .l-page-container .l-header .l-region--branding {
-      width: 32.20339%;
-      float: right;
-      margin-left: 0;
-      margin-right: 0;
-      clear: none; }
-
-/* line 39, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
-.social-media li {
-  list-style: none;
-  display: inline-block; }
-/* line 43, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
-.social-media li.facebook {
-  background-image: url("/sites/all/themes/omega_codepulse/images/Icons/social/3x_Retina_HD/Facebook_light_grey_3x.png");
-  background-repeat: no-repeat;
-  background-size: 40px; }
-  /* line 47, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
-  .social-media li.facebook a {
-    display: block;
-    float: left;
-    height: 40px;
-    width: 40px;
-    outline: none; }
-    /* line 53, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
-    .social-media li.facebook a span {
-      display: none; }
-  /* line 57, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
-  .social-media li.facebook:hover {
-    background-image: url("/sites/all/themes/omega_codepulse/images/Icons/social/3x_Retina_HD/Facebook_main_blue_3x.png"); }
-/* line 62, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
-.social-media li.twitter {
-  background-image: url("/sites/all/themes/omega_codepulse/images/Icons/social/3x_Retina_HD/Twitter_light_grey_3x.png");
-  background-repeat: no-repeat;
-  background-size: 40px; }
-  /* line 66, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
-  .social-media li.twitter a {
-    display: block;
-    float: left;
-    height: 40px;
-    width: 40px;
-    outline: none; }
-    /* line 72, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
-    .social-media li.twitter a span {
-      display: none; }
-  /* line 76, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
-  .social-media li.twitter:hover {
-    background-image: url("/sites/all/themes/omega_codepulse/images/Icons/social/3x_Retina_HD/Twitter_main_blue_3x.png"); }
-/* line 81, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
-.social-media li.pinterest {
-  background-image: url("/sites/all/themes/omega_codepulse/images/Icons/social/3x_Retina_HD/Pinterest_light_grey_3x.png");
-  background-repeat: no-repeat;
-  background-size: 40px; }
-  /* line 85, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
-  .social-media li.pinterest a {
-    display: block;
-    float: left;
-    height: 40px;
-    width: 40px;
-    outline: none; }
-    /* line 91, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
-    .social-media li.pinterest a span {
-      display: none; }
-  /* line 95, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
-  .social-media li.pinterest:hover {
-    background-image: url("/sites/all/themes/omega_codepulse/images/Icons/social/3x_Retina_HD/Pinterest_main_blue_3x.png"); }
+    clear: none; } }
 
 /*# sourceMappingURL=omega_codepulse-front.layout.css.map */

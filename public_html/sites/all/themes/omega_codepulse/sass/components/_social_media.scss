@@ -1,0 +1,63 @@
+.social-media {
+  li {
+    list-style: none;
+    display:inline-block;
+  }
+  li.facebook {
+    background-image:url('/sites/all/themes/omega_codepulse/images/Icons/social/3x_Retina_HD/Facebook_light_grey_3x.png');
+    background-repeat: no-repeat;
+    background-size:40px;
+    a {
+      display:block;
+      float:left;
+      height:40px;
+      width:40px;
+      outline:none;
+      span{
+        display:none;
+      }
+    }
+    &:hover{
+      background-image:url('/sites/all/themes/omega_codepulse/images/Icons/social/3x_Retina_HD/Facebook_main_blue_3x.png');
+    }
+
+  }
+  li.twitter {
+    background-image:url('/sites/all/themes/omega_codepulse/images/Icons/social/3x_Retina_HD/Twitter_light_grey_3x.png');
+    background-repeat: no-repeat;
+    background-size:40px;
+    a {
+      display:block;
+      float:left;
+      height:40px;
+      width:40px;
+      outline:none;
+      span{
+        display:none;
+      }
+    }
+    &:hover{
+      background-image:url('/sites/all/themes/omega_codepulse/images/Icons/social/3x_Retina_HD/Twitter_main_blue_3x.png');
+    }
+
+  }
+  li.pinterest {
+    background-image:url('/sites/all/themes/omega_codepulse/images/Icons/social/3x_Retina_HD/Pinterest_light_grey_3x.png');
+    background-repeat: no-repeat;
+    background-size:40px;
+    a {
+      display:block;
+      float:left;
+      height:40px;
+      width:40px;
+      outline:none;
+      span{
+        display:none;
+      }
+    }
+    &:hover{
+      background-image:url('/sites/all/themes/omega_codepulse/images/Icons/social/3x_Retina_HD/Pinterest_main_blue_3x.png');
+    }
+
+  }
+}

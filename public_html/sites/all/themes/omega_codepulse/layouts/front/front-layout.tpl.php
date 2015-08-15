@@ -72,6 +72,7 @@
 ?>
 <div class="l-page">
   <div class="l-page-container">
+  <div class="l-page-wrapper">
     <header class="l-header" role="banner">
       <div class="l-branding">
         <div class="l-logo">
@@ -88,6 +89,7 @@
         <?php print render($page['navigation']); ?>
       </div>
     </header>
+    </div>
   </div>
 
   <div class="l-slider">
@@ -97,10 +99,13 @@
   </div>
 
   <div class="l-who">
-    <div class="l-who-content">
-      <?php print render($page['who']); ?>
+    <div class="l-page-container">
+
+      <div class="l-who-content">
+        <?php print render($page['who']); ?>
+      </div>
     </div>
-</div>
+  </div>
 
   <div class="l-services">
     <div class="l-services-content">
