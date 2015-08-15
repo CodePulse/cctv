@@ -1,0 +1,179 @@
+@import "compass";
+@import "breakpoint";
+@import "singularitygs";
+
+@font-face {
+  font-family: cabin-font;
+  src: url(../../../fonts/cabin/Cabin-Regular.otf) format("opentype");
+}
+
+.l-page {
+}
+
+.l-slider {
+}
+
+.l-slider-content {
+  overflow: hidden;
+  max-height: 350px;
+}
+.l-menu{
+  .block__title{
+    display:none;
+  }
+  ul {
+    padding:0;
+    li{
+      display:inline-block;
+      margin-right:25px;
+      a.active{
+        color:#4baedb;
+      }
+      a{
+        text-decoration: none;
+        text-transform: uppercase;
+        color:#4D4D4D;
+        &:hover{
+          color:#4baedb;
+        }
+      }
+    }
+  }
+}
+
+@include breakpoint(960px){//medium
+
+  .l-page-container {
+    width: 960px;
+    margin:0 auto;
+    @include clearfix;
+    .l-page-wrapper{
+      @include grid-span(12, 1);
+    }
+    .l-header {
+      @include grid-span(12, 1);
+      @include clearfix;
+
+      .l-branding{
+        @include grid-span(12, 1);
+      }
+      .l-menu{
+        @include grid-span(12, 1);
+      }
+      .l-logo {
+        @include grid-span(9, 1)
+      }
+      .l-region--branding {
+        @include grid-span(3, 10)
+      }
+    }
+  }
+  .l-who{
+    @include grid-span(12, 1);
+    background:#efefef;
+    text-align:center;
+  }
+  .l-services{
+    @include grid-span(12, 1);
+    text-align:center;
+  }
+
+
+}
+@include breakpoint(1200px) { //desktop
+
+  .l-page-container {
+    width: 1200px;
+    margin:0 auto;
+  @include clearfix;
+  .l-page-wrapper{
+    @include grid-span(12, 1);
+  }
+    .l-header {
+      @include grid-span(12, 1);
+      @include clearfix;
+
+      .l-branding{
+        @include grid-span(12, 1);
+      }
+      .l-menu{
+        @include grid-span(12, 1);
+      }
+      .l-logo {
+        @include grid-span(9, 1)
+      }
+      .l-region--branding {
+        @include grid-span(3, 10)
+      }
+    }
+  }
+  .l-who{
+    @include grid-span(12, 1);
+  }
+  .l-services{
+    @include grid-span(12, 1);
+  }
+  #block-block-2 {
+    h2 {
+      margin-top:75px;
+      margin-bottom:40px;
+      font-family:cabin-font;
+    }
+    .block__content {
+      margin-bottom: 75px;
+      @include grid-span(6,4);
+      p{
+        margin:0;
+      }
+    }
+  }
+  #block-block-4 {
+    @include grid-span(12,1);
+    h2 {
+      margin-top:75px;
+      margin-bottom:40px;
+      font-family:cabin-font;
+    }
+    .block__content {
+      margin-bottom: 75px;
+      @include grid-span(6,4);
+      p{
+        margin:0;
+      }
+    }
+  }
+  #block-views-services-we-offer-block {
+    @include grid-span(12,1);
+    img {
+      width:80px;
+    }
+    .block__content {
+      @include grid-span(8, 3);
+      a {
+        color:#6d6e70;
+        text-decoration: none;
+        &:hover{
+          color:#4baedb;
+        }
+      }
+      .view-content {
+        @include grid-span(12, 1);
+        .views-row{
+          display:inline-block;
+          width: 32%;
+          margin-bottom: 50px;
+          text-align: center;
+          .views-field-title {
+            margin-bottom:20px;
+          }
+        }
+      }
+    }
+  }
+  .l-footer{
+    margin-top:110px;
+    min-height:615px;
+  }
+
+}
+
