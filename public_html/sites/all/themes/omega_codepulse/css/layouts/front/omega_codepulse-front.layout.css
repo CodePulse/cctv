@@ -46,4 +46,63 @@
       margin-right: 0;
       clear: none; }
 
+/* line 39, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+.social-media li {
+  list-style: none;
+  display: inline-block; }
+/* line 43, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+.social-media li.facebook {
+  background-image: url("/sites/all/themes/omega_codepulse/images/Icons/social/3x_Retina_HD/Facebook_light_grey_3x.png");
+  background-repeat: no-repeat;
+  background-size: 40px; }
+  /* line 47, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  .social-media li.facebook a {
+    display: block;
+    float: left;
+    height: 40px;
+    width: 40px;
+    outline: none; }
+    /* line 53, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    .social-media li.facebook a span {
+      display: none; }
+  /* line 57, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  .social-media li.facebook:hover {
+    background-image: url("/sites/all/themes/omega_codepulse/images/Icons/social/3x_Retina_HD/Facebook_main_blue_3x.png"); }
+/* line 62, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+.social-media li.twitter {
+  background-image: url("/sites/all/themes/omega_codepulse/images/Icons/social/3x_Retina_HD/Twitter_light_grey_3x.png");
+  background-repeat: no-repeat;
+  background-size: 40px; }
+  /* line 66, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  .social-media li.twitter a {
+    display: block;
+    float: left;
+    height: 40px;
+    width: 40px;
+    outline: none; }
+    /* line 72, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    .social-media li.twitter a span {
+      display: none; }
+  /* line 76, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  .social-media li.twitter:hover {
+    background-image: url("/sites/all/themes/omega_codepulse/images/Icons/social/3x_Retina_HD/Twitter_main_blue_3x.png"); }
+/* line 81, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+.social-media li.pinterest {
+  background-image: url("/sites/all/themes/omega_codepulse/images/Icons/social/3x_Retina_HD/Pinterest_light_grey_3x.png");
+  background-repeat: no-repeat;
+  background-size: 40px; }
+  /* line 85, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  .social-media li.pinterest a {
+    display: block;
+    float: left;
+    height: 40px;
+    width: 40px;
+    outline: none; }
+    /* line 91, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    .social-media li.pinterest a span {
+      display: none; }
+  /* line 95, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  .social-media li.pinterest:hover {
+    background-image: url("/sites/all/themes/omega_codepulse/images/Icons/social/3x_Retina_HD/Pinterest_main_blue_3x.png"); }
+
 /*# sourceMappingURL=omega_codepulse-front.layout.css.map */
