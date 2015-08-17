@@ -10,6 +10,7 @@ regions[navigation] = Navigation
 regions[slider] = Slider
 regions[who] = Who we are
 regions[services] = Services
+regions[content] = Content
 regions[footer] = Footer
 
 ; ========================================

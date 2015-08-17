@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Codepulse - Views feature.
+ */
+
+include_once 'codepulse_views.features.inc';

@@ -117,11 +117,14 @@
   </div>
 
   <div class="l-main">
+    <div class="l-page-container">
+
     <div class="l-content" role="main">
-      <?php print $breadcrumb; ?>
+
+<!--      --><?php //print $breadcrumb; ?>
       <a id="main-content"></a>
       <?php print render($title_prefix); ?>
-
+      <h1 class="node-title"><?php print render($title); ?></h1>
       <?php print render($title_suffix); ?>
       <?php print $messages; ?>
       <?php print render($tabs); ?>
@@ -131,6 +134,7 @@
       <?php endif; ?>
       <?php print render($page['content']); ?>
       <?php print $feed_icons; ?>
+        </div>
     </div>
 
   </div>
