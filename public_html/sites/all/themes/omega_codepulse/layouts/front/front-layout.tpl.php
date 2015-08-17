@@ -124,7 +124,9 @@
 <!--      --><?php //print $breadcrumb; ?>
       <a id="main-content"></a>
       <?php print render($title_prefix); ?>
+      <?php   if (!drupal_is_front_page()): ?>
       <h1 class="node-title"><?php print render($title); ?></h1>
+      <?php endif; ?>
       <?php print render($title_suffix); ?>
       <?php print $messages; ?>
       <?php print render($tabs); ?>

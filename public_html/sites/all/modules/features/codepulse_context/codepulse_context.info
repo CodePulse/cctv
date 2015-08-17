@@ -1,0 +1,12 @@
+name = Codepulse - Context
+core = 7.x
+package = Codepulse features
+dependencies[] = block
+dependencies[] = context
+dependencies[] = ctools
+dependencies[] = views
+features[context][] = about
+features[context][] = home
+features[context][] = sitewide
+features[ctools][] = context:context:3
+features[features_api][] = api:2

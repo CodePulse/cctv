@@ -139,6 +139,12 @@
       }
     }
   }
+  #block-block-6 {
+    .block__content {
+      @include grid-span(6,4);
+      margin-bottom: 40px;
+    }
+    }
   #block-block-4 {
     @include grid-span(12,1);
     h2 {

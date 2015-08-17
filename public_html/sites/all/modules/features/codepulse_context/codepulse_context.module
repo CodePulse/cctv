@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Codepulse - Context feature.
+ */
+
+include_once 'codepulse_context.features.inc';
