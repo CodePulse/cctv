@@ -11,6 +11,7 @@ regions[slider] = Slider
 regions[who] = Who we are
 regions[services] = Services
 regions[content] = Content
+regions[map] = Map
 regions[footer] = Footer
 
 ; ========================================

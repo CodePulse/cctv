@@ -211,6 +211,27 @@
       }
     }
   }
+  .group-enquiries{
+    @include grid-span(12, 1);
 
+    .group-personal {
+  @include grid-span(4, 1);
+    }
+  .group-message {
+    @include grid-span(8, 5);
+  }
+    .form-actions {
+      @include grid-span(12, 1);
+    }
+
+  }
+  input[type='text'] {
+    width:100%;
+    height:40px;
+  }
+  textarea{
+    border:#ccc 1px solid;
+    height:188px;
+  }
 }
 

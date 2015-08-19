@@ -33,3 +33,4 @@ regions[footer] = Footer
 regions[slider] = Slider
 regions[who] = Who we are
 regions[services] = Services
+regions[map] = Map
