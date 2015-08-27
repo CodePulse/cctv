@@ -10,34 +10,15 @@
   font-family: open-sans-font;
   src: url(../../../fonts/open-sans/OpenSans-Regular.ttf) format("opentype");
 }
-.l-region--navigation ul li {
-  position:relative;
-  float:left;
-}
-.l-region--navigation ul li a {
-  display:block;
-  padding-bottom:20px;
-  float:left;
-}
 .l-region--navigation ul li ul {
   display:none;
 }
-.l-region--navigation ul li:hover ul,
-.l-region--navigation ul li.sfhover ul {
+.l-region--navigation ul li:hover ul {
   display:block;
   position:absolute;
-  left:0px;
-  margin-top:25px;
-  z-index:10;
-  border-left:3px solid #4baedb;
-  background-color:rgb(75, 174, 219);
-  background-color:rgba(75, 174, 219, 0.6);
 }
 .l-region--navigation ul li ul li {
-  clear:left;
-}
-.l-region--navigation ul li ul li a {
-  padding-bottom:0px;
+  display:block;
 }
 .l-page {
 }
@@ -184,21 +165,21 @@
     @include grid-span(12, 1);
     margin-top:110px;
     min-height:360px;
-    background:transparent url("../../../images/footer/Footer_x3_Retina%20HD.png") repeat scroll 0% 90% / 75% auto;
+    background:transparent url("../../../images/footer/Footer_x3_Retina%20HD.png") repeat-x scroll 0% 90% / 75% auto;
     #block-block-5{
       margin-top:40%;
       color:#fff;
       font-weight:bold;
       text-align:center;
       p{
-        font-size:24px; // change this for different device check style guide
+        font-size:18px; // change this for different device check style guide
       }
       .footer-number {
         background:#fff;
         border-radius:10px;
         color:#4aaddb;
         padding: 10px;
-        font-size: 18px;
+        font-size: 14px;
       }
     }
   }
@@ -360,7 +341,7 @@
     @include grid-span(12, 1);
     margin-top:110px;
     min-height:375px;
-    background:transparent url("../../../images/footer/Footer_x3_Retina%20HD.png") repeat scroll 0% 90% / 75% auto;
+    background:transparent url("../../../images/footer/Footer_x3_Retina%20HD.png") repeat-x scroll 0% 90% / 75% auto;
     #block-block-5{
       margin-top:40%;
       color:#fff;
@@ -511,7 +492,7 @@
     @include grid-span(12, 1);
     margin-top:110px;
     min-height:615px;
-    background:transparent url("../../../images/footer/Footer_x3_Retina%20HD.png") repeat scroll 0% 90% / 75% auto;
+    background:transparent url("../../../images/footer/Footer_x3_Retina%20HD.png") repeat-x scroll 0% 90% / 75% auto;
     #block-block-5{
       margin-top:40%;
       color:#fff;
