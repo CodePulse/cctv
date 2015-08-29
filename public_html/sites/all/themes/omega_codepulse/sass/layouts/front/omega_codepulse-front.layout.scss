@@ -26,24 +26,30 @@
 }
 .l-region--navigation ul li ul li:hover a{
   color:#fff;
+  &:before {
+    content: '•';
+    color: #fff;
+    position: absolute;
+    top: 8px;
+    left:5px;
+    font-size: 20px;
+  }
 }
 .l-region--navigation ul li ul li:hover {
   background-color: rgb(75, 174, 219);
-  &before {
-    content:'r';
 
-  }
 }
 .l-region--navigation ul li ul li {
   display:block;
   margin:0;
   border-left:none;
   padding:0;
+  position:relative;
 }
 .l-region--navigation ul li ul li a {
   color:#fff;
   display:block;
-  padding: 10px;
+  padding: 10px 10px 10px 20px;
   text-transform: none;
   min-width:245px;
 }
