@@ -276,7 +276,31 @@ li.expanded:hover {
       float:left;
     }
   }
-
+  #block-block-10 {
+    position:relative;
+  }
+  .find-us {
+    padding:20px;
+    background-color: rgba(75, 174, 219, 0.6);
+    color:#fff;
+    width:365px;
+    position: absolute;
+    left: 45%;
+    top: 55.5%;
+    h1{
+      text-transform: uppercase;
+      font-weight:bold;
+      font-family:cabin-font;
+    }
+    h3{
+      text-transform: uppercase;
+      font-weight:bold;
+      font-family:cabin-font;
+    }
+    p{
+      margin-top:30px;
+    }
+  }
 
 }
 
@@ -431,31 +455,10 @@ li.expanded:hover {
     border:#ccc 1px solid;
     height:188px;
   }
-  #block-block-10 {
-    position:relative;
-  }
   .find-us {
-    padding:20px;
-    background-color: rgba(75, 174, 219, 0.6);
-    color:#fff;
-    width:365px;
-    position: absolute;
-    left: 71%;
-    top: 55.5%;
-    h1{
-      text-transform: uppercase;
-      font-weight:bold;
-      font-family:cabin-font;
-    }
-    h3{
-      text-transform: uppercase;
-      font-weight:bold;
-      font-family:cabin-font;
-    }
-    p{
-      margin-top:30px;
-    }
+    left:60%;
   }
+
 
 }
 @include breakpoint(1200px) { //desktop
@@ -606,5 +609,9 @@ li.expanded:hover {
     border:#ccc 1px solid;
     height:188px;
   }
+  .find-us {
+    left:70%;
+  }
+
 }
 
