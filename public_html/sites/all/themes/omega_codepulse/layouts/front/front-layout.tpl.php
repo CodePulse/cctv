@@ -109,7 +109,6 @@
 
   <div class="l-services">
     <div class="l-page-container">
-
     <div class="l-services-content">
       <?php print render($page['services']); ?>
     </div>
@@ -139,6 +138,11 @@
         </div>
     </div>
 
+  </div>
+  <div class="l-map">
+      <div class="l-map-content">
+        <?php print render($page['map']); ?>
+      </div>
   </div>
 
   <footer class="l-footer" role="contentinfo">

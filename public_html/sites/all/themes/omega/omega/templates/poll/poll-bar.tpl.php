@@ -26,25 +26,12 @@
   </div>
 </div>
 
-
-<div class="contact-details-block">
-  <div class="left-contact">
-    <div class="contact-email">
-      <h4 class="contact-title">Email</h4>
-      <p>contact@centralsurveillance.co.uk</p>
-    </div>
-    <div class="contact-number">
-      <h4 class="contact-title">Number</h4>
-      <p>+44 7805 823 528</p>
-    </div>
-  </div>
-  <div class="right-contact">
-  <div class="contact-address">
-    <h4 class="contact-title">Address</h4>
-    <p>Vintage House<br>
-      37 Albert Embankment<br>
-      London<br>
-      SE1 7TL</p>
-  </div>
-  </div>
+<div class="find-us">
+  <h3>Find Us</h3>
+  <h5>Fairwood Group</h5>
+  <p>Vintage House<br>
+    37 Albert Embankment<br>
+    London<br>
+    SE1 7TL<br>
+  </p>
 </div>

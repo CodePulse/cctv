@@ -137,6 +137,9 @@ li.expanded:hover {
       }
     }
   }
+  .l-map{
+    @include grid-span(12, 1);
+  }
   .l-who{
     @include grid-span(12, 1);
     background:#efefef;
@@ -428,7 +431,31 @@ li.expanded:hover {
     border:#ccc 1px solid;
     height:188px;
   }
-
+  #block-block-10 {
+    position:relative;
+  }
+  .find-us {
+    padding:20px;
+    background-color: rgba(75, 174, 219, 0.6);
+    color:#fff;
+    width:365px;
+    position: absolute;
+    left: 71%;
+    top: 55.5%;
+    h1{
+      text-transform: uppercase;
+      font-weight:bold;
+      font-family:cabin-font;
+    }
+    h3{
+      text-transform: uppercase;
+      font-weight:bold;
+      font-family:cabin-font;
+    }
+    p{
+      margin-top:30px;
+    }
+  }
 
 }
 @include breakpoint(1200px) { //desktop
