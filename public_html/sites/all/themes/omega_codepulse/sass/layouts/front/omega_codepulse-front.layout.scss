@@ -102,6 +102,10 @@ li.expanded:hover {
 }
 #block-views-services-we-offer-block-1 {
   overflow:hidden;
+  border-top: 5px solid #ccc;
+  border-bottom: 5px solid #ccc;
+  padding-top: 20px;
+  padding-bottom: 20px;
   img {
     width:80px;
   }
@@ -118,9 +122,10 @@ li.expanded:hover {
       li {
         list-style:none;
         text-align: center;
-        .views-field-title {
+        .views-field-title-custom {
           margin-bottom:20px;
           height:30px;
+          display:block;
         }
         .views-field-field-icon {
           height:100px;
