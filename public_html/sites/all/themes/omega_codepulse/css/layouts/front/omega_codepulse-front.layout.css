@@ -222,7 +222,7 @@ textarea {
   clear: none;
   margin-top: 110px;
   min-height: 245px;
-  background: transparent url("../../../images/footer/Footer_x3_Retina%20HD.png") repeat-x scroll 92% 61%/1120px auto; }
+  background: transparent url("../../../images/footer/Footer_x3_Retina%20HD.png") repeat-x scroll 92% 73%/1120px auto; }
 
 @media (min-width: 720px) {
   /* line 226, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
@@ -741,7 +741,7 @@ textarea {
         padding: 10px;
         font-size: 18px;
         display: inline-block;
-        width: 18%; }
+        width: 20%; }
 
   /* line 572, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   .group-enquiries {

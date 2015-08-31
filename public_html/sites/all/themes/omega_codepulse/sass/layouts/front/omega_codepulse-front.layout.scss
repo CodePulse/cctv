@@ -219,7 +219,7 @@ textarea{
   @include grid-span(12, 1);
   margin-top:110px;
   min-height: 245px;
-  background:transparent url("../../../images/footer/Footer_x3_Retina%20HD.png") repeat-x scroll 92% 61% / 1120px auto;
+  background:transparent url("../../../images/footer/Footer_x3_Retina%20HD.png") repeat-x scroll 92% 73% / 1120px auto;
 }
 
 @include breakpoint(720px){//small
@@ -565,7 +565,7 @@ textarea{
         padding: 10px;
         font-size: 18px;
         display: inline-block;
-        width: 18%;
+        width: 20%;
       }
     }
   }
