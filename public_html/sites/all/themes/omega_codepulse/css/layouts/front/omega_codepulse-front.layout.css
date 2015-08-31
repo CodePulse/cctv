@@ -210,7 +210,7 @@ textarea {
     padding: 10px;
     font-size: 14px;
     display: block;
-    width: 140px;
+    width: 155px;
     margin: 15px auto; }
 
 /* line 218, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
@@ -442,7 +442,7 @@ textarea {
         color: #4aaddb;
         padding: 10px;
         font-size: 14px;
-        width: 19%; }
+        width: 20%; }
 
   /* line 363, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   .group-enquiries {
