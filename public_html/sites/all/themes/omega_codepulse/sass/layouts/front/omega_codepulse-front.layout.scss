@@ -95,7 +95,9 @@ li.expanded:hover {
     }
   }
 }
-
+#block-views-services-we-offer-block {
+  display:none;
+}
 .find-us {
   display:none;
 }
@@ -222,6 +224,7 @@ textarea{
     }
   }
   #block-views-services-we-offer-block {
+    display:block;
     @include grid-span(12,1);
     img {
       width:80px;
@@ -249,6 +252,9 @@ textarea{
         }
       }
     }
+  }
+  #block-views-services-we-offer-block-1{
+    display:none;
   }
   .l-footer{
     @include grid-span(12, 1);
