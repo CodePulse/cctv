@@ -95,6 +95,30 @@ li.expanded:hover {
     }
   }
 }
+.l-who {
+  background: #efefef;
+  text-align: center;
+  p {
+    font-size:14px;
+  }
+}
+#block-block-4 {
+  .block__content{
+    width:65%;
+    margin:0 auto;
+    font-size: 14px;
+    text-align:center;
+  }
+}
+#block-block-2 {
+  .block__content{
+    width:65%;
+    margin:0 auto;
+  }
+}
+.l-services{
+  text-align:center;
+}
 #block-views-services-we-offer-block {
   display:none;
 }
