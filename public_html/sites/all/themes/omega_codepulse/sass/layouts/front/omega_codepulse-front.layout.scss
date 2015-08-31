@@ -99,8 +99,37 @@ li.expanded:hover {
   display:none;
 }
 #block-views-services-we-offer-block-1 {
-  overflow:hidden;
 }
+#block-views-services-we-offer-block-1 {
+  overflow:hidden;
+  img {
+    width:80px;
+  }
+  .block__content {
+    a {
+      color:#6d6e70;
+      text-decoration: none;
+      font-size:18px;
+      &:hover{
+        color:#4baedb;
+      }
+    }
+    ul {
+      li {
+        list-style:none;
+        text-align: center;
+        .views-field-title {
+          margin-bottom:20px;
+          height:30px;
+        }
+        .views-field-field-icon {
+          height:100px;
+        }
+      }
+    }
+  }
+}
+
 .find-us {
   display:none;
 }
