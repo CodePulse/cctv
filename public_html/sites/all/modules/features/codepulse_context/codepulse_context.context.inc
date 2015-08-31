@@ -38,6 +38,12 @@ function codepulse_context_context_default_contexts() {
           'region' => 'footer',
           'weight' => '-10',
         ),
+        'block-7' => array(
+          'module' => 'block',
+          'delta' => '7',
+          'region' => 'slider',
+          'weight' => '-10',
+        ),
         'block-6' => array(
           'module' => 'block',
           'delta' => '6',
@@ -50,6 +56,40 @@ function codepulse_context_context_default_contexts() {
   );
   $context->condition_mode = 0;
   $export['about'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'contact';
+  $context->description = '';
+  $context->tag = '';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        'contact-us' => 'contact-us',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'block-8' => array(
+          'module' => 'block',
+          'delta' => '8',
+          'region' => 'content',
+          'weight' => '16',
+        ),
+        'block-10' => array(
+          'module' => 'block',
+          'delta' => '10',
+          'region' => 'map',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+  $export['contact'] = $context;
 
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
@@ -90,6 +130,12 @@ function codepulse_context_context_default_contexts() {
           'delta' => 'services_we_offer-block',
           'region' => 'services',
           'weight' => '-9',
+        ),
+        'views-services_we_offer-block_1' => array(
+          'module' => 'views',
+          'delta' => 'services_we_offer-block_1',
+          'region' => 'services',
+          'weight' => '-8',
         ),
       ),
       'layout' => 'front',
