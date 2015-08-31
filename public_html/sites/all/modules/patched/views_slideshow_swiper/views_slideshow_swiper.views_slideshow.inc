@@ -683,7 +683,8 @@ function views_slideshow_swiper_views_slideshow_slideshow_type_form(&$form, &$fo
     '#description' => t('CSS class name of next/prev button when it becomes disabled.'),
   );
 
-  $options = views_slideshow_swiper_views_slideshow_option_definition()['views_slideshow_swiper']['contains'];
+  $options_definition = views_slideshow_swiper_views_slideshow_option_definition();
+  $options = $options_definition['views_slideshow_swiper']['contains'];
   foreach (array_keys($options) as $key) {
     $title = ucfirst(strtolower(preg_replace('/([A-Z])/', ' $1', $key)));
     $current = $view->options['views_slideshow_swiper'][$key];
@@ -702,7 +703,8 @@ function views_slideshow_swiper_views_slideshow_options_form_validate(&$form, &$
 
 function _views_slideshow_swiper_remove_default_values(&$values) {
   // Get default values.
-  $default_values = views_slideshow_swiper_views_slideshow_option_definition()['views_slideshow_swiper']['contains'];
+  $default_values_definition = views_slideshow_swiper_views_slideshow_option_definition();
+  $default_values = $default_values_definition['views_slideshow_swiper']['contains'];
   foreach ($values as $key => $value) {
     // Check if default value exists for current key.
     if (isset($default_values[$key]) && isset($default_values[$key]['default'])) {

@@ -13,7 +13,9 @@ function views_slideshow_swiper_requirements($phase) {
   );
 
   if (!function_exists('libraries_detect')) {
-    if ($library = system_rebuild_module_data()['libraries']) {
+    $library_definition = system_rebuild_module_data();
+    $library = $library_definition['libraries'];
+    if ($library) {
       module_load_include('module','libraries', 'libraries');
     } else {
       $requirements['views_slideshow_swiper']['value'] = $t('Cannot find a dependency, the Libraries API (libraries) module.');
