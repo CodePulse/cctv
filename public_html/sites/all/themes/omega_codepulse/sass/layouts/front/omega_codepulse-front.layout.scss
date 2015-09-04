@@ -21,8 +21,8 @@
   text-transform: none;
   border-left:3px solid #4baedb;
   border-top:1px solid #4baedb;
-  margin-left: -23px;
-  margin-top: 15px;
+  margin-left: 0;
+  margin-top: 0;
 }
 .l-region--navigation ul li ul li:hover a{
   color:#fff;
@@ -53,13 +53,8 @@
   text-transform: none;
   min-width:245px;
 }
-li.expanded:hover a{
-  color:#fff;
-}
+
 li.expanded:hover {
-  background-color: rgb(75, 174, 219);
-  background-color: rgba(75, 174, 219, 0.6);
-  border-left:3px solid #4baedb;
 }
 .l-slider-content {
   overflow: hidden;
@@ -73,11 +68,6 @@ li.expanded:hover {
     padding:0;
     > li{
       display:inline-block;
-      margin-right: 15px;
-      padding-left: 20px;
-      padding-right: 20px;
-      padding-bottom: 15px;
-      padding-top: 5px;
       border-left: 3px solid white;
 
       a.active{
@@ -88,12 +78,32 @@ li.expanded:hover {
         text-transform: uppercase;
         color:#4D4D4D;
         font-weight:bold;
+        display:block;
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-bottom: 10px;
+        padding-top: 9px;
+        border-left:3px solid #fff;
         &:hover{
           color:#4baedb;
+
         }
       }
     }
+    li.expanded{
+      a{
+        &:hover{
+          color:#fff;
+          background-color: rgb(75, 174, 219);
+          background-color: rgba(75, 174, 219, 0.6);
+          border-left:3px solid #4baedb;
+        }
+        }
+    }
   }
+}
+li.expanded a:hover{
+//   !important;
 }
 .l-who {
   background: #efefef;
@@ -162,20 +172,7 @@ li.expanded:hover {
 .find-us {
   display:none;
 }
-.contact-details-block {
-  h4 {
-    text-transform: uppercase;
-    color: #4aaddb;
-    font-weight:bold;
-    margin:0 0 10px 0;
-  }
-  a {
-    color:#6d6e71;
-    &:hover {
-      color:#4aaddb;
-    }
-  }
-}
+.contact-details-block
 .l-page-container{
   padding:5px;
 }
