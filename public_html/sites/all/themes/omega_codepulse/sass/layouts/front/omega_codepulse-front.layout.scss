@@ -134,6 +134,8 @@ li.expanded a:hover{
 .l-who {
   background: #efefef;
   text-align: center;
+  padding-top: 1px;
+  padding-bottom: 1px;
   p {
     font-size:14px;
   }
@@ -144,6 +146,11 @@ li.expanded a:hover{
     margin:0 auto;
     font-size: 14px;
     text-align:center;
+  }
+}
+#block-block-1 {
+  p{
+    margin:0;
   }
 }
 #block-block-2 {
@@ -243,6 +250,20 @@ textarea{
   margin-top:110px;
   min-height: 245px;
   background:transparent url("../../../images/footer/Footer_x3_Retina%20HD.png") repeat-x scroll 92% 73% / 1120px auto;
+}
+h2 {
+  margin-top: 75px;
+  margin-bottom: 40px;
+  font-family: cabin-font;
+  font-size: 22px;
+}
+#block-block-2 {
+  .block__content {
+    margin-bottom: 75px;
+    p{
+      margin:0;
+    }
+  }
 }
 
 @include breakpoint(720px){//small
