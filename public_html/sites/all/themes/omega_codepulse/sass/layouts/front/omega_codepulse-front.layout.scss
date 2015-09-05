@@ -69,6 +69,9 @@
 }
 li.expanded:hover {
 }
+.l-slider{
+  height:250px;
+}
 .l-slider-content {
   overflow: hidden;
   max-height: 350px;
@@ -479,7 +482,9 @@ h2 {
   #block-block-5 p {
     width: 100%;
   }
-
+  .l-slider{
+    height:auto;
+  }
 }
 
 @include breakpoint(960px){//medium
