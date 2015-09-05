@@ -85,6 +85,10 @@
         </div>
         <?php print render($page['branding']); ?>
       </div>
+      <div class="l-page-container">
+
+      <span class="horizontal-rule"></span>
+        </div>
       <div class="l-menu">
         <?php print render($page['navigation']); ?>
       </div>
