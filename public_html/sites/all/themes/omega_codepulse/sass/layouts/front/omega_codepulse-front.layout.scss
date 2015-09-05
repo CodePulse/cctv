@@ -163,6 +163,11 @@ li.expanded a:hover{
     margin:0;
   }
 }
+input[type="submit"] {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 2px 10px;
+}
 #block-block-2 {
   .block__content{
     width:65%;
