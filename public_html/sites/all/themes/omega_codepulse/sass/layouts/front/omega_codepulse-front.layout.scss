@@ -13,13 +13,13 @@
 .l-region--navigation ul li ul {
   display:none;
 }
-.l-region--navigation ul li:hover ul {
+.l-region--navigation ul > li:hover ul {
   display:block;
   position:absolute;
   background-color: rgb(75, 174, 219);
   background-color: rgba(75, 174, 219, 0.6);
   text-transform: none;
-  border-left:3px solid #4baedb;
+//  border-left:3px solid #4baedb;
   border-top:1px solid #4baedb;
   margin-left: 0;
   margin-top: 0;
@@ -73,7 +73,10 @@ li.expanded:hover {
       a.active{
         color:#4baedb;
       }
-      a{
+      a:nth-child(1){
+        padding-left: 0;
+      }
+      > a{
         text-decoration: none;
         text-transform: uppercase;
         color:#4D4D4D;
@@ -98,7 +101,14 @@ li.expanded:hover {
           background-color: rgba(75, 174, 219, 0.6);
           border-left:3px solid #4baedb;
         }
+      }
+      ul{
+        li {
+          a{
+            border-left:3px solid #4baedb;
+          }
         }
+      }
     }
   }
 }
