@@ -132,13 +132,17 @@
       <?php endif; ?>
       <?php print render($title_suffix); ?>
       <?php print $messages; ?>
-      <?php print render($tabs); ?>
-      <?php print render($page['help']); ?>
-      <?php if ($action_links): ?>
-        <ul class="action-links"><?php print render($action_links); ?></ul>
-      <?php endif; ?>
+<!--      --><?php //print render($tabs); ?>
+<!--      --><?php //print render($page['help']); ?>
+<!--      --><?php //if ($action_links): ?>
+<!--        <ul class="action-links">--><?php //print render($action_links); ?><!--</ul>-->
+<!--      --><?php //endif; ?>
+      <?php   if (!drupal_is_front_page()): ?>
+
       <?php print render($page['content']); ?>
-      <?php print $feed_icons; ?>
+      <?php endif; ?>
+
+      <!--      --><?php //print $feed_icons; ?>
         </div>
     </div>
 

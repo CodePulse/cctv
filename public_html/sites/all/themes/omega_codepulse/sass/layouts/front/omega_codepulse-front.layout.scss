@@ -287,6 +287,12 @@ h2 {
     float:right;
   }
 }
+.section-contact-us {
+  h1 {
+    font-size:22px;
+    font-family: cabin-font;
+  }
+}
 .section-contact-us .l-main {
   padding:20px;
 }
@@ -518,7 +524,7 @@ h2 {
   #block-block-5 p {
     width: 100%;
   }
-  .l-slider{
+  .front .l-slider{
     height:auto;
   }
 }
