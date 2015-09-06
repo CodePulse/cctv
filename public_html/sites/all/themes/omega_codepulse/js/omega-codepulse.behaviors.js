@@ -56,5 +56,18 @@
       });
     }
   };
+    Drupal.behaviors.mobileMenu = {
+        attach: function (context, settings) {
+
+            $(window, context).on('resize load orientationchange', function () {
+                if ($(window).width() < 720) {
+                    $('#block-system-main-menu',context).addClass('mobile-size');
+                }
+                if ($(window).width() >= 740) {
+                    $('#block-system-main-menu',context).removeClass('mobile-size');
+                }
+            })
+        }
+    };
 
 })(jQuery);

@@ -85,11 +85,12 @@
         </div>
         <?php print render($page['branding']); ?>
       </div>
-      <div class="l-page-container">
+      <div class="l-page-container hori-rule">
 
       <span class="horizontal-rule"></span>
         </div>
       <div class="l-menu">
+        <a href="#" id="menu-icon"></a>
         <?php print render($page['navigation']); ?>
       </div>
     </header>
