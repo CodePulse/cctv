@@ -89,7 +89,7 @@
 
       <span class="horizontal-rule"></span>
         </div>
-      <div class="l-menu">
+      <div class="l-menu main-menu">
         <a href="#" id="menu-icon"></a>
         <?php print render($page['navigation']); ?>
       </div>

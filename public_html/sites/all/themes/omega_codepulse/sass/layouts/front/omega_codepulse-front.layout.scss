@@ -200,7 +200,7 @@ h2 {
     display: none;
   }
 }
-#menu-icon {
+.mobile-size #menu-icon {
   background:url('../../../images/Icons/menu/3x_Retina_HD/Burger_menu_unselected_3x.png') no-repeat 0 0 /50px 35px;
   display:block;
   height:40px;
@@ -211,6 +211,20 @@ h2 {
     position:absolute;
     li{
       list-style:none;
+      position:relative;
+      &:hover{
+        a{
+
+          &:before {
+            content: '•';
+            color: #fff;
+            position: absolute;
+            top: 13px;
+            left:5px;
+            font-size: 20px;
+          }
+        }
+      }
       a {
         color:#fff;
         background-color: rgb(75, 174, 219);
