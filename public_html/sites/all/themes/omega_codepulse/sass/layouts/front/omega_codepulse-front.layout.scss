@@ -235,6 +235,32 @@ h2 {
             font-size: 20px;
           }
         }
+        ul.sub-menu{
+          a{
+            &:before {
+              content: '';
+              color: #fff;
+              position: absolute;
+              top: 13px;
+              left:5px;
+              font-size: 20px;
+            }
+          }
+          li{
+            &:hover{
+              a{
+                &:before{
+                  content: '•';
+                  color: #fff;
+                  position: absolute;
+                  top: 13px;
+                  left:5px;
+                  font-size: 20px;
+                }
+              }
+            }
+          }
+        }
       }
       a {
         color:#fff;
