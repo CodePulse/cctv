@@ -212,9 +212,20 @@ h2 {
     li{
       list-style:none;
       position:relative;
+      ul {
+        display:none;
+      }
       &:hover{
+        ul {
+          display:block;
+          position: absolute;
+          top: 0;
+          left: 109px;
+          border-left: 3px solid #4baedb;
+          padding: 0;
+          z-index:2;
+        }
         a{
-
           &:before {
             content: '•';
             color: #fff;
@@ -235,9 +246,6 @@ h2 {
         &:hover{
           background-color: rgb(75, 174, 219);
         }
-      }
-      ul {
-        display:none;
       }
     }
 
