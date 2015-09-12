@@ -62,10 +62,12 @@
             $(window, context).on('resize load orientationchange', function () {
                 if ($(window).width() < 720) {
                     $('.l-menu.main-menu',context).addClass('mobile-size');
+                    $('.block--block-3',context).addClass('mobile-size');
                     $('ul li ul',context).addClass('sub-menu');
                 }
                 if ($(window).width() >= 720) {
                     $('.l-menu.main-menu',context).removeClass('mobile-size');
+                    $('.block--block-3',context).removeClass('mobile-size');
                     $('ul li ul',context).removeClass('sub-menu');
 
                 }

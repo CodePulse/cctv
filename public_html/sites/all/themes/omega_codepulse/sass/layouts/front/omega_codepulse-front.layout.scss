@@ -2,9 +2,21 @@
 @import "breakpoint";
 @import "singularitygs";
 
+//@font-face {
+//  font-family: cabin-font;
+//  src: url(../../../fonts/cabin/Cabin-Regular.otf) format("opentype");
+//}
 @font-face {
-  font-family: cabin-font;
-  src: url(../../../fonts/cabin/Cabin-Regular.otf) format("opentype");
+  font-family: 'cabin-font';
+  src: url('../../../fonts/custom_fonts/cabin/cabin-regular-webfont.eot');
+  src: url('../../../fonts/custom_fonts/cabin/cabin-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../../../fonts/custom_fonts/cabin/cabin-regular-webfont.woff2') format('woff2'),
+  url('../../../fonts/custom_fonts/cabin/cabin-regular-webfont.woff') format('woff'),
+  url('../../../fonts/custom_fonts/cabin/cabin-regular-webfont.ttf') format('truetype'),
+  url('../../../fonts/custom_fonts/cabin/cabin-regular-webfont.svg#cabinregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
 }
 @font-face {
   font-family: open-sans-font;
@@ -14,9 +26,22 @@
   font-family: open-sans-font-bold;
   src: url(../../../fonts/open-sans/OpenSans-Semibold.ttf) format("opentype");
 }
+//@font-face {
+//  font-family: open-sans-font-light;
+//  src: url(../../../fonts/open-sans/OpenSans-Light.ttf) format("opentype");
+//}
+
 @font-face {
-  font-family: open-sans-font-light;
-  src: url(../../../fonts/open-sans/OpenSans-Light.ttf) format("opentype");
+  font-family: 'open-sans-font-light';
+  src: url('../../../fonts/custom_fonts/open_sans/opensans-light-webfont.eot');
+  src: url('../../../fonts/custom_fonts/open_sans/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../../../fonts/custom_fonts/open_sans/opensans-light-webfont.woff2') format('woff2'),
+  url('../../../fonts/custom_fonts/open_sans/opensans-light-webfont.woff') format('woff'),
+  url('../../../fonts/custom_fonts/open_sans/opensans-light-webfont.ttf') format('truetype'),
+  url('../../../fonts/custom_fonts/open_sans/opensans-light-webfont.svg#open_sanslight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
 }
 .l-region--navigation ul li ul li a{
 }
@@ -206,6 +231,12 @@ h2 {
   height:40px;
   width:45px;
 }
+.mobile-size #social-icon {
+  background:url('../../../images/Icons/social/3x_Retina_HD/Social_dropdown_unselected_3x.png') no-repeat 0 0 /50px 35px;
+  display:block;
+  height:40px;
+  width:45px;
+}
 .mobile-size {
   ul.menu{
     position:absolute;
@@ -275,6 +306,15 @@ h2 {
       }
     }
 
+  }
+  ul.social-media{
+    background-color: rgba(75, 174, 219, 0.6);
+    width:50px;
+    padding:0;
+    margin:0;
+    li{
+
+    }
   }
 }
 @include breakpoint(720px){//small
