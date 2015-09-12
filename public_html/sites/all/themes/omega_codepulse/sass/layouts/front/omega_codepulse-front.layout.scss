@@ -18,9 +18,21 @@
   font-style: normal;
 
 }
+//@font-face {
+//  font-family: open-sans-font;
+//  src: url(../../../fonts/open-sans/OpenSans-Regular.ttf) format("opentype");
+//}
 @font-face {
-  font-family: open-sans-font;
-  src: url(../../../fonts/open-sans/OpenSans-Regular.ttf) format("opentype");
+  font-family: 'open-sans-font';
+  src: url('../../../fonts/custom_fonts/open_sans_regular/opensans-regular-webfont.eot');
+  src: url('../../../fonts/custom_fonts/open_sans_regular/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../../../fonts/custom_fonts/open_sans_regular/opensans-regular-webfont.woff2') format('woff2'),
+  url('../../../fonts/custom_fonts/open_sans_regular/opensans-regular-webfont.woff') format('woff'),
+  url('../../../fonts/custom_fonts/open_sans_regular/opensans-regular-webfont.ttf') format('truetype'),
+  url('../../../fonts/custom_fonts/open_sans_regular/opensans-regular-webfont.svg#open_sansregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
 }
 //@font-face {
 //  font-family: open-sans-font-bold;
