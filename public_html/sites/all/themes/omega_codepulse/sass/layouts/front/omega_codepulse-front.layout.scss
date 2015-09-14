@@ -67,6 +67,10 @@
   font-style: normal;
 
 }
+input[type='text'] {
+  -webkit-border-radius:0;
+  -webkit-appearance: none;
+}
 .l-region--navigation ul li ul li a{
 }
 .front .l-slider{
