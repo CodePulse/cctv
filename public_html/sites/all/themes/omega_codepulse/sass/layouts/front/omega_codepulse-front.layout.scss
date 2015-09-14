@@ -72,7 +72,8 @@ textarea,
 input[type='text'] {
   -webkit-border-radius:0;
   -webkit-border:1px solid #ccc;
-//  -webkit-appearance: none;
+  border:1px solid #ccc;
+  -webkit-appearance: none;
 }
 .l-region--navigation ul li ul li a{
 }
