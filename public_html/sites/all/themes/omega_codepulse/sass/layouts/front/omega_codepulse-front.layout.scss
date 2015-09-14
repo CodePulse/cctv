@@ -67,6 +67,10 @@
   font-style: normal;
 
 }
+p {
+  font-size:14px;
+}
+
 input[type="submit"],
 textarea,
 input[type='text'] {
@@ -77,6 +81,18 @@ input[type='text'] {
 }
 .l-region--navigation ul li ul li a{
 }
+.l-who{
+  @include grid-span(12, 1);
+  background:#efefef;
+  text-align:center;
+}
+#block-block-6 {
+  .block__content {
+    @include grid-span(6,4);
+    margin-bottom: 40px;
+  }
+}
+
 .front .l-slider{
   height:250px;
 }
