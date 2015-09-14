@@ -195,7 +195,8 @@ textarea{
     font-size: 14px;
     display: block;
     width: 155px;
-    margin: 15px auto;
+    margin: 15px 35px;
+    text-decoration: none;
   }
 }
 .l-footer{
@@ -489,7 +490,8 @@ h2 {
         @include grid-span(9, 1)
       }
       .l-region--branding {
-        @include grid-span(3, 10)
+        @include grid-span(3, 10);
+      margin-top: 30px;
       }
     }
   }
@@ -615,6 +617,8 @@ h2 {
   input[type='text'] {
     width:100%;
     height:40px;
+    -webkit-border-radius:0;
+    -webkit-appearance: none;
   }
   textarea{
     border:#ccc 1px solid;
@@ -655,7 +659,7 @@ h2 {
     width:365px;
     position: absolute;
     left: 45%;
-    top: 55.5%;
+    top: 58%;
     h1{
       text-transform: uppercase;
       font-weight:bold;
