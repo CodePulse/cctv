@@ -92,9 +92,15 @@ input[type='text'] {
     margin-bottom: 40px;
   }
 }
+.l-slider{
+  background:#efefef;
+  p{
+    margin:0;
+  }
+}
 
 .front .l-slider{
-  height:250px;
+//  height:250px;
 }
 .l-slider-content {
   overflow: hidden;
@@ -622,7 +628,7 @@ h2 {
         font-size: 14px;
         width:20%;
         margin:15px 35px;
-      
+
 
       }
     }
