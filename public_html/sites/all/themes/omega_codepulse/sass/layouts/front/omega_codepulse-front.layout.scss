@@ -294,7 +294,7 @@ h2 {
   background:url('../../../images/Icons/menu/3x_Retina_HD/Burger_menu_selected_3x.png') no-repeat 0 0 /50px 75px;
 }
 .mobile-size #menu-icon {
-  background:url('/sites/all/themes/omega_codepulse/images/Icons/menu/3x_Retina_HD/Burger_menu_unselected_3x.png') no-repeat 0 0 /50px 35px;
+  background:url('../../../images/Icons/menu/3x_Retina_HD/Burger_menu_unselected_3x.png') no-repeat 0 0 /50px 35px;
   display:block;
   height:40px;
   width:45px;
@@ -304,8 +304,8 @@ h2 {
 .mobile-size #social-icon {
   background:url('../../../images/Icons/social/3x_Retina_HD/Social_dropdown_unselected_3x.png') no-repeat 0 0 /50px 35px;
   display:block;
-  height:40px;
-  width:45px;
+  height:65px;
+//  width:45px;
   margin-left:84%;
 }
 .mobile-size {
@@ -399,7 +399,6 @@ h2 {
   display:block !important;
 }
 .block--block-3.mobile-size{
-  left:84%;
 }
 #block-views-services-we-offer-block-1,
 #block-block-4 {
@@ -746,6 +745,10 @@ h2 {
   }
   .front .l-slider{
     height:auto;
+  }
+  .l-slider{
+    margin:0;
+
   }
 }
 
