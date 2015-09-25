@@ -18,11 +18,11 @@ function cctv_custom_entity_presave($entity, $type) {
       'email' => $email,
       'number' => $number,
       'message' => $message,
-      'headers' => array(
-        'From' => '"CCTV NAME" <cctv@cctvtest.com>',
-        'Sender' => 'no-reply@ticket4show.com',
-        'Return-Path' => 'no-reply@ticket4show.com',
-      )
+//      'headers' => array(
+//        'From' => '"CCTV NAME" <cctv@cctvtest.com>',
+//        'Sender' => 'no-reply@ticket4show.com',
+//        'Return-Path' => 'no-reply@ticket4show.com',
+//      )
     );
 
 //    drupal_mail('cctv_custom', 'contact_us', 'contact@centralsurveillance.co.uk', language_default(), $params);
@@ -42,13 +42,13 @@ function cctv_custom_mail($key, &$message, $params) {
     case 'contact_us':
       $message['subject'] = 'SITENAME - New \'Contact Us\' Submission';
       $message['body'][] = t('Name: !name', array('!name' => $params['name']));
-      $message['body'][] = '<br>';
+//      $message['body'][] = '<br>';
       $message['body'][] = t('Email: !email', array('!email' => $params['email']));
-      $message['body'][] = '<br>';
+//      $message['body'][] = '<br>';
       $message['body'][] = t('Number: !number', array('!number' => $params['number']));
-      $message['body'][] = '<br>';
+//      $message['body'][] = '<br>';
       $message['body'][] = t('Message: !message', array('!message' => $params['message']));
-      $message['body'][] = '<br>';
+//      $message['body'][] = '<br>';
       $message['body'][] = '***HI JULIAN/CHRIS, I CAN ADD MORE STUFF TO THIS EMAIL IF NEEDED***';
       break;
   }
