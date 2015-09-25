@@ -20,8 +20,8 @@ function cctv_custom_entity_presave($entity, $type) {
       'message' => $message,
       'headers' => array(
         'From' => '"CCTV NAME" <cctv@cctvtest.com>',
-//        'Sender' => 'no-reply@ticket4show.com',
-//        'Return-Path' => 'no-reply@ticket4show.com',
+        'Sender' => 'no-reply@ticket4show.com',
+        'Return-Path' => 'no-reply@ticket4show.com',
       )
     );
 
