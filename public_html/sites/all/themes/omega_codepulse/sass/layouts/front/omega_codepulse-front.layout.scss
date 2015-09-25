@@ -301,12 +301,19 @@ h2 {
   margin-left: 15px;
   margin-top: -75px;
 }
+.mobile-size .social-icon-selected {
+  background:url('../../../images/Icons/social/3x_Retina_HD/Social_dropdown_selected_3x.png') no-repeat 0 0 /50px 35px !important;
+}
 .mobile-size #social-icon {
   background:url('../../../images/Icons/social/3x_Retina_HD/Social_dropdown_unselected_3x.png') no-repeat 0 0 /50px 35px;
   display:block;
   height:65px;
 //  width:45px;
   margin-left:84%;
+}
+.main-menu.mobile-size {
+  width:40px;
+
 }
 .mobile-size {
   ul.menu{
@@ -381,12 +388,18 @@ h2 {
     }
 
   }
+  ul.social-media-selected{
+    display:block !important;
+  }
   ul.social-media{
     background-color: rgba(75, 174, 219, 0.6);
     width:50px;
     padding:0;
     margin:0;
     display:none;
+    margin-left: 84%;
+    margin-top: -40px;
+    position: absolute;
     li{
 
     }

@@ -77,8 +77,14 @@
 
             $("#menu-icon", context).click(
                 function () {
-                    console.log('clicked');
                     $('.mobile-size ul.first-level-menu').toggleClass('display-menu');
+                }
+            );
+            $("#social-icon", context).click(
+                function () {
+                    $(this).toggleClass('social-icon-selected');
+                    $('ul.social-media').toggleClass('social-media-selected');
+
                 }
             );
         }
