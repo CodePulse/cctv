@@ -81,12 +81,6 @@
                     $('.mobile-size ul.first-level-menu').toggleClass('display-menu');
                 }
             );
-
-
-            //$( "#menu-icon" ).hover(function() {
-            //    console.log(this);
-            //    $( this ).addClass('clicked-menu');
-            //});
         }
     };
 

@@ -64,7 +64,7 @@ input[type='text'] {
 /* line 103, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
 .l-slider {
   background: #efefef;
-  margin-top: 500px; }
+  margin-top: 40px; }
   /* line 106, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   .l-slider p {
     margin: 0; }
@@ -257,7 +257,7 @@ h2 {
 
 /* line 296, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
 .mobile-size #menu-icon {
-  background: url("../../../images/Icons/menu/3x_Retina_HD/Burger_menu_unselected_3x.png") no-repeat 0 0/50px 35px;
+  background: url("/sites/all/themes/omega_codepulse/images/Icons/menu/3x_Retina_HD/Burger_menu_unselected_3x.png") no-repeat 0 0/50px 35px;
   display: block;
   height: 40px;
   width: 45px;
