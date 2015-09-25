@@ -2,6 +2,9 @@
 @import "breakpoint";
 @import "singularitygs";
 
+
+//JAVASCRIPT CAN TURN OFF THAT WEIRD DELAY THING WHEN U TAP A LINK ON IOS
+
 //@font-face {
 //  font-family: cabin-font;
 //  src: url(../../../fonts/cabin/Cabin-Regular.otf) format("opentype");
@@ -285,21 +288,31 @@ h2 {
     display: none;
   }
 }
+
+.mobile-size #menu-icon.clicked-menu {
+  background:url('../../../images/Icons/menu/3x_Retina_HD/Burger_menu_selected_3x.png') no-repeat 0 0 /50px 75px;
+}
 .mobile-size #menu-icon {
   background:url('../../../images/Icons/menu/3x_Retina_HD/Burger_menu_unselected_3x.png') no-repeat 0 0 /50px 35px;
   display:block;
   height:40px;
   width:45px;
+  margin-left: 15px;
+  margin-top: -75px;
 }
 .mobile-size #social-icon {
   background:url('../../../images/Icons/social/3x_Retina_HD/Social_dropdown_unselected_3x.png') no-repeat 0 0 /50px 35px;
   display:block;
   height:40px;
   width:45px;
+  margin-left:84%;
 }
 .mobile-size {
   ul.menu{
     position:absolute;
+    padding: 0 0 0 20px;
+    margin: 0;
+    display:none;
     li{
       list-style:none;
       position:relative;
@@ -380,6 +393,9 @@ h2 {
 }
 .l-main {
   padding:10px;
+}
+.display-menu {
+  display:block !important;
 }
 .block--block-3.mobile-size{
   left:84%;
@@ -573,6 +589,7 @@ h2 {
   }
   #block-block-4 {
     @include grid-span(12,1);
+    margin-bottom:30px;
     h2 {
       margin-top:75px;
       margin-bottom:40px;
