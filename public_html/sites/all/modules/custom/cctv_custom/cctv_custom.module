@@ -1,0 +1,55 @@
+<?php
+
+/**
+ * @see hook_entity_presave()
+ */
+function cctv_custom_entity_presave($entity, $type) {
+  if ($type == 'entityform' && $entity->type == 'contact_us') {
+    $entity_wrapper = entity_metadata_wrapper('entityform', $entity);
+
+    $name = $entity_wrapper->field_name->value();
+    $email = $entity_wrapper->field_email->value();
+    $number = $entity_wrapper->field_phone_number->value();
+    $message = $entity_wrapper->field_message->value();
+
+
+    $params = array(
+      'name' => $name,
+      'email' => $email,
+      'number' => $number,
+      'message' => $message,
+//      'headers' => array(
+//        'From' => 'Ticket4Show@ticket4show.com',
+//        'Sender' => 'no-reply@ticket4show.com',
+//        'Return-Path' => 'no-reply@ticket4show.com',
+//      )
+    );
+
+//    drupal_mail('cctv_custom', 'contact_us', 'contact@centralsurveillance.co.uk', language_default(), $params);
+    drupal_mail('cctv_custom', 'contact_us', 'ben@codepulse.co.uk', language_default(), $params);
+  }
+
+
+}
+
+/**
+ * @see hook_mail()
+ */
+function cctv_custom_mail($key, &$message, $params) {
+  // To allow html in message body (i think)
+  $message['headers']['Content-Type'] = 'text/html; charset=UTF-8; format=flowed; delsp=yes';
+  switch ($key) {
+    case 'contact_us':
+      $message['subject'] = 'SITENAME - New \'Contact Us\' Submission';
+      $message['body'][] = t('Name: !name', array('!name' => $params['name']));
+      $message['body'][] = '<br>';
+      $message['body'][] = t('Email: !email', array('!email' => $params['email']));
+      $message['body'][] = '<br>';
+      $message['body'][] = t('Number: !number', array('!number' => $params['number']));
+      $message['body'][] = '<br>';
+      $message['body'][] = t('Message: !message', array('!location' => $params['message']));
+      $message['body'][] = '<br>';
+      $message['body'][] = '***HI JULIAN/CHRIS, I CAN ADD MORE STUFF TO THIS EMAIL IF NEEDED***';
+      break;
+  }
+}

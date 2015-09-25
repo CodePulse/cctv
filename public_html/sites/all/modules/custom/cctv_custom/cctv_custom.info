@@ -1,0 +1,5 @@
+name = CCTV Custom module
+description = Custom module
+package = CCTV
+core = 7.x
+
