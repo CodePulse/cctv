@@ -302,10 +302,10 @@ h2 {
   margin-top: -75px;
 }
 .mobile-size .social-icon-selected {
-  background:url('../../../images/Icons/social/3x_Retina_HD/Social_dropdown_selected_3x.png') no-repeat 0 0 /50px 35px !important;
+  background:url('../../../images/Icons/social/3x_Retina_HD/Social_dropdown_selected_3x.png') no-repeat 0 0 /39px 46px !important;
 }
 .mobile-size #social-icon {
-  background:url('../../../images/Icons/social/3x_Retina_HD/Social_dropdown_unselected_3x.png') no-repeat 0 0 /50px 35px;
+  background:url('../../../images/Icons/social/3x_Retina_HD/Social_dropdown_unselected_3x.png') no-repeat 0 0 /39px 46px;
   display:block;
   height:65px;
 //  width:45px;
@@ -394,12 +394,15 @@ h2 {
   ul.social-media{
     background-color: rgba(75, 174, 219, 0.6);
     width:50px;
-    padding:0;
+    padding:10px 0 0 0;
     margin:0;
     display:none;
     margin-left: 84%;
     margin-top: -40px;
     position: absolute;
+    border-top:3px solid #4baedb;
+    border-bottom:3px solid #4baedb;
+
     li{
 
     }
