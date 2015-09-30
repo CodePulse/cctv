@@ -32,35 +32,51 @@
 .service-row > div {
   display: inline-block; }
 
-/* line 84, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+/* line 86, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+.view-services-we-offer.view-display-id-block_1 .views-field-title a img {
+  margin-top: 0; }
+
+/* line 96, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+.view-services-we-offer .views-field-title a img {
+  margin-top: 30px; }
+
+/* line 104, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+.service-row .service-row-body a {
+  text-decoration: none;
+  color: #4d4d4d;
+  font-family: 'open-sans-font-bold'; }
+  /* line 108, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  .service-row .service-row-body a:hover {
+    color: #4baedb; }
+/* line 113, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
 .service-row .service-row-left-col {
   width: 20%; }
-  /* line 86, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 115, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   .service-row .service-row-left-col img {
     width: 160px; }
-/* line 90, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+/* line 119, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
 .service-row .service-row-right-col {
   width: 78%;
   vertical-align: top; }
-/* line 95, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+/* line 124, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
 .service-row h3 a {
   text-decoration: none;
   color: #4D4D4D; }
-  /* line 98, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 127, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   .service-row h3 a:hover {
     color: #4baedb; }
 
-/* line 104, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+/* line 133, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
 p {
   font-size: 14px; }
 
-/* line 107, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+/* line 136, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
 #block-block-4 h2 {
   margin-top: 75px;
   margin-bottom: 40px;
   font-family: cabin-font; }
 
-/* line 113, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+/* line 142, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
 input[type="submit"],
 textarea,
 input[type='text'] {
@@ -69,7 +85,7 @@ input[type='text'] {
   border: 1px solid #ccc;
   -webkit-appearance: none; }
 
-/* line 123, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+/* line 152, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
 .l-who {
   width: 100%;
   float: right;
@@ -79,7 +95,7 @@ input[type='text'] {
   background: #efefef;
   text-align: center; }
 
-/* line 129, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+/* line 158, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
 #block-block-6 .block__content {
   width: 66.10169%;
   float: left;
@@ -88,30 +104,30 @@ input[type='text'] {
   clear: none;
   margin-bottom: 40px; }
 
-/* line 134, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+/* line 163, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
 .l-slider {
   background: #efefef;
   margin-top: 40px; }
-  /* line 137, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 166, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   .l-slider p {
     margin: 0; }
 
-/* line 145, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+/* line 174, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
 .l-slider-content {
   overflow: hidden;
   max-height: 350px; }
 
-/* line 149, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+/* line 178, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
 .front .l-who {
   background: #efefef;
   text-align: center;
   padding-top: 1px;
   padding-bottom: 1px; }
-  /* line 154, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 183, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   .front .l-who p {
     font-size: 14px; }
 
-/* line 159, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+/* line 188, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
 #block-block-4 .block__content {
   width: 65%;
   margin: 0 auto;
@@ -119,97 +135,97 @@ input[type='text'] {
   text-align: center;
   margin-bottom: 75px; }
 
-/* line 168, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+/* line 197, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
 #block-block-1 p {
   margin: 0; }
 
-/* line 172, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+/* line 201, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
 input[type="submit"] {
   background-color: white;
   border: 1px solid #ccc;
   padding: 2px 10px;
   font-family: 'open-sans-font-bold'; }
 
-/* line 179, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+/* line 208, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
 #block-block-2 .block__content {
   width: 65%;
   margin: 0 auto; }
 
-/* line 184, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+/* line 213, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
 .l-services {
   text-align: center; }
 
-/* line 187, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+/* line 216, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
 #block-views-services-we-offer-block {
   display: none; }
 
-/* line 192, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+/* line 221, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
 #block-views-services-we-offer-block-1 {
   overflow: hidden;
   border-top: 5px solid #ccc;
   border-bottom: 5px solid #ccc;
   padding-top: 20px;
   padding-bottom: 20px; }
-  /* line 198, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 227, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   #block-views-services-we-offer-block-1 img {
     width: 80px; }
-  /* line 202, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 231, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   #block-views-services-we-offer-block-1 .block__content a {
     color: #6d6e70;
     text-decoration: none;
     font-size: 18px; }
-    /* line 206, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    /* line 235, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
     #block-views-services-we-offer-block-1 .block__content a:hover {
       color: #4baedb; }
-  /* line 211, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 240, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   #block-views-services-we-offer-block-1 .block__content ul li {
     list-style: none;
     text-align: center; }
-    /* line 214, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    /* line 243, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
     #block-views-services-we-offer-block-1 .block__content ul li .views-field-title-custom {
       margin-bottom: 20px;
       height: 30px;
       display: block; }
-    /* line 219, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    /* line 248, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
     #block-views-services-we-offer-block-1 .block__content ul li .views-field-field-icon {
       height: 100px; }
 
-/* line 227, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+/* line 256, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
 .find-us {
   display: none; }
 
-/* line 230, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+/* line 259, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
 .contact-details-block
 .l-page-container {
   padding: 5px; }
 
-/* line 235, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+/* line 264, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
 #block-block-10 iframe {
   height: 235px !important; }
 
-/* line 239, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+/* line 268, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
 input[type='text'] {
   width: 100%;
   height: 40px; }
 
-/* line 243, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+/* line 272, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
 textarea {
   border: #ccc 1px solid;
   height: 188px; }
 
-/* line 248, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+/* line 277, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
 #block-block-5 {
   display: block;
   margin-top: 40%;
   color: #fff;
   font-weight: bold;
   text-align: center; }
-  /* line 255, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 284, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   #block-block-5 p {
     font-size: 18px;
     width: 50%;
     margin: 0 auto; }
-  /* line 260, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 289, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   #block-block-5 .footer-number {
     background: #fff;
     border-radius: 10px;
@@ -221,7 +237,7 @@ textarea {
     margin: 15px auto;
     text-decoration: none; }
 
-/* line 272, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+/* line 301, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
 .l-footer {
   width: 100%;
   float: right;
@@ -232,57 +248,57 @@ textarea {
   min-height: 245px;
   background: transparent url("../../../images/footer/Footer_x3_Retina%20HD.png") repeat-x scroll 92% 73%/1120px auto; }
 
-/* line 278, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+/* line 307, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
 h2 {
   margin-top: 75px;
   margin-bottom: 40px;
   font-family: cabin-font;
   font-size: 22px; }
 
-/* line 285, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+/* line 314, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
 #block-block-2 .block__content {
   margin-bottom: 75px; }
-  /* line 287, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 316, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   #block-block-2 .block__content p {
     margin: 0; }
 
-/* line 293, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+/* line 322, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
 .contact-us-entityform-edit-form .form-actions {
   float: right; }
 
-/* line 298, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+/* line 327, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
 .section-contact-us h1 {
   font-size: 22px;
   font-family: cabin-font; }
 
-/* line 303, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+/* line 332, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
 .section-contact-us .l-main {
   padding: 20px; }
 
-/* line 306, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+/* line 335, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
 .contact-details-block h4 {
   text-transform: uppercase;
   color: #4aaddb;
   font-weight: bold;
   margin: 0 0 10px 0; }
 
-/* line 312, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+/* line 341, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
 .contact-details-block a {
   color: #6d6e71; }
 
-/* line 315, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+/* line 344, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
 .hori-rule {
   display: none; }
 
-/* line 319, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+/* line 348, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
 .l-menu .block__title {
   display: none; }
 
-/* line 324, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+/* line 353, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
 .mobile-size #menu-icon.clicked-menu {
   background: url("../../../images/Icons/menu/3x_Retina_HD/Burger_menu_selected_3x.png") no-repeat 0 0/50px 75px; }
 
-/* line 327, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+/* line 356, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
 .mobile-size #menu-icon {
   background: url("../../../images/Icons/menu/3x_Retina_HD/Burger_menu_unselected_3x.png") no-repeat 0 0/50px 35px;
   display: block;
@@ -291,35 +307,35 @@ h2 {
   margin-left: 15px;
   margin-top: -75px; }
 
-/* line 335, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+/* line 364, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
 .mobile-size .social-icon-selected {
-  background: url("../../../images/Icons/social/3x_Retina_HD/Social_dropdown_selected_3x.png") no-repeat 0 0/39px 46px !important; }
+  background: url("../../../images/Icons/social/3x_Retina_HD/Social_dropdown_selected_3x.png") no-repeat 0 0/33px 33px !important; }
 
-/* line 338, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+/* line 367, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
 .mobile-size #social-icon {
-  background: url("../../../images/Icons/social/3x_Retina_HD/Social_dropdown_unselected_3x.png") no-repeat 0 0/39px 46px;
+  background: url("../../../images/Icons/social/3x_Retina_HD/Social_dropdown_unselected_3x.png") no-repeat 0 0/33px 33px;
   display: block;
   height: 65px;
   margin-left: 84%; }
 
-/* line 345, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+/* line 374, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
 .main-menu.mobile-size {
   width: 40px; }
 
-/* line 350, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+/* line 379, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
 .mobile-size ul.menu {
   position: absolute;
   padding: 0 0 0 20px;
   margin: 0;
   display: none; }
-  /* line 355, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 384, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   .mobile-size ul.menu li {
     list-style: none;
     position: relative; }
-    /* line 358, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    /* line 387, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
     .mobile-size ul.menu li ul {
       display: none; }
-    /* line 362, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    /* line 391, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
     .mobile-size ul.menu li:hover ul {
       display: block;
       position: absolute;
@@ -328,7 +344,7 @@ h2 {
       border-left: 3px solid #4baedb;
       padding: 0;
       z-index: 2; }
-    /* line 372, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    /* line 401, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
     .mobile-size ul.menu li:hover a:before {
       content: '•';
       color: #fff;
@@ -336,7 +352,7 @@ h2 {
       top: 13px;
       left: 5px;
       font-size: 20px; }
-    /* line 383, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    /* line 412, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
     .mobile-size ul.menu li:hover ul.sub-menu a:before {
       content: '';
       color: #fff;
@@ -344,7 +360,7 @@ h2 {
       top: 13px;
       left: 5px;
       font-size: 20px; }
-    /* line 395, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    /* line 424, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
     .mobile-size ul.menu li:hover ul.sub-menu li:hover a:before {
       content: '•';
       color: #fff;
@@ -352,7 +368,7 @@ h2 {
       top: 13px;
       left: 5px;
       font-size: 20px; }
-    /* line 408, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    /* line 437, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
     .mobile-size ul.menu li a {
       color: #fff;
       background-color: #4baedb;
@@ -360,13 +376,13 @@ h2 {
       padding: 15px;
       display: block;
       text-decoration: none; }
-      /* line 415, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+      /* line 444, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
       .mobile-size ul.menu li a:hover {
         background-color: #4baedb; }
-/* line 422, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+/* line 451, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
 .mobile-size ul.social-media-selected {
   display: block !important; }
-/* line 425, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+/* line 454, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
 .mobile-size ul.social-media {
   background-color: rgba(75, 174, 219, 0.6);
   width: 50px;
@@ -379,15 +395,15 @@ h2 {
   border-top: 3px solid #4baedb;
   border-bottom: 3px solid #4baedb; }
 
-/* line 442, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+/* line 471, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
 .l-main {
   padding: 10px; }
 
-/* line 445, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+/* line 474, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
 .display-menu {
   display: block !important; }
 
-/* line 450, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+/* line 479, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
 #block-views-services-we-offer-block-1,
 #block-block-4 {
   width: 100%;
@@ -397,32 +413,32 @@ h2 {
   clear: none; }
 
 @media (min-width: 720px) {
-  /* line 455, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 484, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   h2 {
     margin-top: 75px;
     margin-bottom: 40px;
     font-family: cabin-font;
     font-size: 22px; }
 
-  /* line 461, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 490, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   p {
     font-size: 14px; }
 
-  /* line 464, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 493, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   .hori-rule {
     display: block; }
 
-  /* line 467, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 496, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   .l-region--navigation ul li ul {
     display: none; }
 
-  /* line 470, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 499, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   .horizontal-rule {
     width: 90%;
     border-top: 1px solid #ccc;
     display: block; }
 
-  /* line 475, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 504, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   .l-region--navigation ul li:hover ul {
     display: block;
     position: absolute;
@@ -433,10 +449,10 @@ h2 {
     margin-left: 0;
     margin-top: 0; }
 
-  /* line 486, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 515, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   .l-region--navigation ul li ul li:hover a {
     color: #fff; }
-    /* line 488, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    /* line 517, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
     .l-region--navigation ul li ul li:hover a:before {
       content: '•';
       color: #fff;
@@ -445,7 +461,7 @@ h2 {
       left: 5px;
       font-size: 20px; }
 
-  /* line 501, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 530, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   .l-region--navigation ul li ul li {
     display: block;
     margin: 0;
@@ -453,7 +469,7 @@ h2 {
     padding: 0;
     position: relative; }
 
-  /* line 508, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 537, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   .l-region--navigation ul li ul li a {
     color: #fff;
     display: block;
@@ -462,25 +478,25 @@ h2 {
     min-width: 245px;
     font-family: open-sans-font-light; }
 
-  /* line 516, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 545, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   .l-region--navigation ul li ul li:nth-child(1) a {
     padding-left: 20px !important; }
 
-  /* line 520, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 549, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   .l-menu ul {
     padding: 0; }
-    /* line 523, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    /* line 552, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
     .l-menu ul > li:nth-child(1) a {
       padding-left: 0;
       border-left: 0; }
-    /* line 528, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    /* line 557, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
     .l-menu ul > li {
       display: inline-block;
       border-left: 3px solid white; }
-      /* line 532, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+      /* line 561, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
       .l-menu ul > li a.active {
         color: #4baedb; }
-      /* line 535, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+      /* line 564, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
       .l-menu ul > li > a {
         text-decoration: none;
         text-transform: uppercase;
@@ -492,43 +508,43 @@ h2 {
         padding-bottom: 10px;
         padding-top: 9px;
         border-left: 3px solid #fff; }
-        /* line 546, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+        /* line 575, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
         .l-menu ul > li > a:hover {
           color: #4baedb; }
-    /* line 554, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    /* line 583, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
     .l-menu ul li.expanded:hover a {
       color: #fff;
       background-color: #4baedb;
       background-color: rgba(75, 174, 219, 0.6);
       border-left: 3px solid #4baedb; }
-      /* line 559, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+      /* line 588, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
       .l-menu ul li.expanded:hover a:hover {
         font-family: open-sans-font-bold;
         background-color: #4baedb; }
-    /* line 567, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    /* line 596, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
     .l-menu ul li.expanded ul li a {
       border-left: 3px solid #4baedb;
       min-width: 258px; }
 
-  /* line 577, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 606, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   #block-block-8 {
     margin-top: 27%; }
 
-  /* line 580, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 609, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   .l-page-container {
     width: 720px;
     margin: 0 auto;
     padding: 0;
     overflow: hidden;
     *zoom: 1; }
-    /* line 585, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    /* line 614, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
     .l-page-container .l-page-wrapper {
       width: 100%;
       float: right;
       margin-left: 0;
       margin-right: 0;
       clear: none; }
-    /* line 588, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    /* line 617, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
     .l-page-container .l-header {
       width: 100%;
       float: right;
@@ -537,28 +553,28 @@ h2 {
       clear: none;
       overflow: hidden;
       *zoom: 1; }
-      /* line 592, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+      /* line 621, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
       .l-page-container .l-header .l-branding {
         width: 100%;
         float: right;
         margin-left: 0;
         margin-right: 0;
         clear: none; }
-      /* line 595, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+      /* line 624, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
       .l-page-container .l-header .l-menu {
         width: 100%;
         float: right;
         margin-left: 0;
         margin-right: 0;
         clear: none; }
-      /* line 598, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+      /* line 627, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
       .l-page-container .l-header .l-logo {
         width: 74.57627%;
         float: left;
         margin-right: -100%;
         margin-left: 0;
         clear: none; }
-      /* line 601, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+      /* line 630, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
       .l-page-container .l-header .l-region--branding {
         width: 23.72881%;
         float: right;
@@ -567,7 +583,7 @@ h2 {
         clear: none;
         margin-top: 30px; }
 
-  /* line 607, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 636, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   .l-map {
     width: 100%;
     float: right;
@@ -575,7 +591,7 @@ h2 {
     margin-right: 0;
     clear: none; }
 
-  /* line 610, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 639, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   .l-who {
     width: 100%;
     float: right;
@@ -585,7 +601,7 @@ h2 {
     background: #efefef;
     text-align: center; }
 
-  /* line 615, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 644, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   .l-services {
     width: 100%;
     float: right;
@@ -594,7 +610,7 @@ h2 {
     clear: none;
     text-align: center; }
 
-  /* line 619, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 648, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   .l-main {
     width: 100%;
     float: right;
@@ -602,7 +618,7 @@ h2 {
     margin-right: 0;
     clear: none; }
 
-  /* line 623, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 652, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   #block-block-2 .block__content {
     margin-bottom: 75px;
     width: 74.57627%;
@@ -610,11 +626,11 @@ h2 {
     margin-right: -100%;
     margin-left: 8.47458%;
     clear: none; }
-    /* line 626, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    /* line 655, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
     #block-block-2 .block__content p {
       margin: 0; }
 
-  /* line 632, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 661, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   #block-block-6 .block__content {
     width: 49.15254%;
     float: left;
@@ -623,7 +639,7 @@ h2 {
     clear: none;
     margin-bottom: 40px; }
 
-  /* line 637, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 666, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   #block-block-4 {
     width: 100%;
     float: right;
@@ -631,12 +647,12 @@ h2 {
     margin-right: 0;
     clear: none;
     margin-bottom: 30px; }
-    /* line 640, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    /* line 669, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
     #block-block-4 h2 {
       margin-top: 75px;
       margin-bottom: 40px;
       font-family: cabin-font; }
-    /* line 645, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    /* line 674, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
     #block-block-4 .block__content {
       margin-bottom: 75px;
       width: 74.57627%;
@@ -644,11 +660,11 @@ h2 {
       margin-right: -100%;
       margin-left: 8.47458%;
       clear: none; }
-      /* line 648, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+      /* line 677, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
       #block-block-4 .block__content p {
         margin: 0; }
 
-  /* line 653, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 682, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   #block-views-services-we-offer-block {
     display: block;
     width: 100%;
@@ -656,46 +672,46 @@ h2 {
     margin-left: 0;
     margin-right: 0;
     clear: none; }
-    /* line 656, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    /* line 685, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
     #block-views-services-we-offer-block img {
       width: 80px; }
-    /* line 659, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    /* line 688, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
     #block-views-services-we-offer-block .block__content {
       width: 74.57627%;
       float: left;
       margin-right: -100%;
       margin-left: 8.47458%;
       clear: none; }
-      /* line 661, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+      /* line 690, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
       #block-views-services-we-offer-block .block__content a {
         color: #6d6e70;
         text-decoration: none;
         font-size: 18px; }
-        /* line 665, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+        /* line 694, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
         #block-views-services-we-offer-block .block__content a:hover {
           color: #4baedb; }
-      /* line 669, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+      /* line 698, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
       #block-views-services-we-offer-block .block__content .view-content {
         width: 100%;
         float: right;
         margin-left: 0;
         margin-right: 0;
         clear: none; }
-        /* line 671, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+        /* line 700, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
         #block-views-services-we-offer-block .block__content .view-content .views-row {
           display: inline-block;
           width: 48%;
           margin-bottom: 50px;
           text-align: center; }
-          /* line 676, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+          /* line 705, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
           #block-views-services-we-offer-block .block__content .view-content .views-row .views-field-title {
             margin-bottom: 20px; }
 
-  /* line 683, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 712, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   #block-views-services-we-offer-block-1 {
     display: none; }
 
-  /* line 686, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 715, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   .l-footer {
     width: 100%;
     float: right;
@@ -705,17 +721,17 @@ h2 {
     margin-top: 110px;
     min-height: 360px;
     background: transparent url("../../../images/footer/Footer_x3_Retina%20HD.png") repeat-x scroll 0% 90%/75% auto; }
-    /* line 691, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    /* line 720, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
     .l-footer #block-block-5 {
       display: block;
       margin-top: 35%;
       color: #fff;
       font-weight: bold;
       text-align: center; }
-      /* line 697, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+      /* line 726, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
       .l-footer #block-block-5 p {
         font-size: 18px; }
-      /* line 700, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+      /* line 729, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
       .l-footer #block-block-5 .footer-number {
         background: #fff;
         border-radius: 10px;
@@ -725,7 +741,7 @@ h2 {
         width: 20%;
         margin: 15px 35px; }
 
-  /* line 713, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 742, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   .group-enquiries {
     width: 100%;
     float: right;
@@ -734,14 +750,14 @@ h2 {
     clear: none;
     overflow: hidden;
     *zoom: 1; }
-    /* line 716, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    /* line 745, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
     .group-enquiries .group-personal {
       width: 100%;
       float: right;
       margin-left: 0;
       margin-right: 0;
       clear: none; }
-    /* line 719, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    /* line 748, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
     .group-enquiries .group-message {
       width: 100%;
       float: right;
@@ -749,46 +765,46 @@ h2 {
       margin-right: 0;
       clear: none; }
 
-  /* line 730, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 759, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   input[type='text'] {
     width: 100%;
     height: 40px;
     -webkit-border-radius: 0;
     -webkit-appearance: none; }
 
-  /* line 736, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 765, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   textarea {
     border: #ccc 1px solid;
     height: 188px; }
 
-  /* line 741, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 770, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   .contact-details-block h4 {
     text-transform: uppercase;
     color: #4aaddb;
     font-weight: bold;
     margin: 0 0 10px 0; }
-  /* line 747, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 776, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   .contact-details-block a {
     color: #6d6e71; }
-    /* line 749, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    /* line 778, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
     .contact-details-block a:hover {
       color: #4aaddb; }
-  /* line 753, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 782, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   .contact-details-block .left-contact {
     float: left;
     margin-right: 90px; }
-  /* line 757, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 786, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   .contact-details-block .right-contact {
     float: left; }
 
-  /* line 761, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 790, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   #block-block-10 {
     position: relative; }
-    /* line 763, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    /* line 792, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
     #block-block-10 iframe {
       height: 600px !important; }
 
-  /* line 767, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 796, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   .find-us {
     display: block;
     padding: 20px;
@@ -798,57 +814,57 @@ h2 {
     position: absolute;
     left: 45%;
     top: 58%; }
-    /* line 776, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    /* line 805, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
     .find-us h1 {
       text-transform: uppercase;
       font-weight: bold;
       font-family: cabin-font; }
-    /* line 781, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    /* line 810, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
     .find-us h3 {
       text-transform: uppercase;
       font-weight: bold;
       font-family: cabin-font; }
-    /* line 786, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    /* line 815, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
     .find-us p {
       margin-top: 30px; }
 
-  /* line 790, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 819, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   #block-block-5 p {
     width: 100%; }
 
-  /* line 793, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 822, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   .front .l-slider {
     height: auto; }
 
-  /* line 796, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 825, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   .l-slider {
     margin: 0; } }
 @media (min-width: 960px) {
-  /* line 803, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 832, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   h2 {
     margin-top: 75px;
     margin-bottom: 40px;
     font-family: cabin-font;
     font-size: 22px; }
 
-  /* line 809, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 838, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   p {
     font-size: 14px; }
 
-  /* line 813, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 842, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   .l-page-container {
     width: 960px;
     margin: 0 auto;
     overflow: hidden;
     *zoom: 1; }
-    /* line 817, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    /* line 846, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
     .l-page-container .l-page-wrapper {
       width: 100%;
       float: right;
       margin-left: 0;
       margin-right: 0;
       clear: none; }
-    /* line 820, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    /* line 849, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
     .l-page-container .l-header {
       width: 100%;
       float: right;
@@ -857,28 +873,28 @@ h2 {
       clear: none;
       overflow: hidden;
       *zoom: 1; }
-      /* line 824, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+      /* line 853, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
       .l-page-container .l-header .l-branding {
         width: 100%;
         float: right;
         margin-left: 0;
         margin-right: 0;
         clear: none; }
-      /* line 827, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+      /* line 856, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
       .l-page-container .l-header .l-menu {
         width: 100%;
         float: right;
         margin-left: 0;
         margin-right: 0;
         clear: none; }
-      /* line 830, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+      /* line 859, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
       .l-page-container .l-header .l-logo {
         width: 74.57627%;
         float: left;
         margin-right: -100%;
         margin-left: 0;
         clear: none; }
-      /* line 833, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+      /* line 862, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
       .l-page-container .l-header .l-region--branding {
         width: 23.72881%;
         float: right;
@@ -886,7 +902,7 @@ h2 {
         margin-right: 0;
         clear: none; }
 
-  /* line 838, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 867, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   .l-who {
     width: 100%;
     float: right;
@@ -896,7 +912,7 @@ h2 {
     background: #efefef;
     text-align: center; }
 
-  /* line 843, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 872, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   .l-services {
     width: 100%;
     float: right;
@@ -905,7 +921,7 @@ h2 {
     clear: none;
     text-align: center; }
 
-  /* line 847, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 876, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   .l-main {
     width: 100%;
     float: right;
@@ -913,7 +929,7 @@ h2 {
     margin-right: 0;
     clear: none; }
 
-  /* line 851, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 880, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   #block-block-2 .block__content {
     margin-bottom: 75px;
     width: 49.15254%;
@@ -921,11 +937,11 @@ h2 {
     margin-right: -100%;
     margin-left: 25.42373%;
     clear: none; }
-    /* line 854, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    /* line 883, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
     #block-block-2 .block__content p {
       margin: 0; }
 
-  /* line 860, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 889, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   #block-block-6 .block__content {
     width: 49.15254%;
     float: left;
@@ -934,19 +950,19 @@ h2 {
     clear: none;
     margin-bottom: 40px; }
 
-  /* line 865, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 894, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   #block-block-4 {
     width: 100%;
     float: right;
     margin-left: 0;
     margin-right: 0;
     clear: none; }
-    /* line 867, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    /* line 896, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
     #block-block-4 h2 {
       margin-top: 75px;
       margin-bottom: 40px;
       font-family: cabin-font; }
-    /* line 872, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    /* line 901, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
     #block-block-4 .block__content {
       margin-bottom: 75px;
       width: 49.15254%;
@@ -954,53 +970,53 @@ h2 {
       margin-right: -100%;
       margin-left: 25.42373%;
       clear: none; }
-      /* line 875, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+      /* line 904, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
       #block-block-4 .block__content p {
         margin: 0; }
 
-  /* line 880, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 909, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   #block-views-services-we-offer-block {
     width: 100%;
     float: right;
     margin-left: 0;
     margin-right: 0;
     clear: none; }
-    /* line 882, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    /* line 911, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
     #block-views-services-we-offer-block img {
       width: 80px; }
-    /* line 885, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    /* line 914, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
     #block-views-services-we-offer-block .block__content {
       width: 66.10169%;
       float: left;
       margin-right: -100%;
       margin-left: 16.94915%;
       clear: none; }
-      /* line 887, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+      /* line 916, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
       #block-views-services-we-offer-block .block__content a {
         color: #6d6e70;
         text-decoration: none;
         font-size: 18px; }
-        /* line 891, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+        /* line 920, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
         #block-views-services-we-offer-block .block__content a:hover {
           color: #4baedb; }
-      /* line 895, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+      /* line 924, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
       #block-views-services-we-offer-block .block__content .view-content {
         width: 100%;
         float: right;
         margin-left: 0;
         margin-right: 0;
         clear: none; }
-        /* line 897, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+        /* line 926, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
         #block-views-services-we-offer-block .block__content .view-content .views-row {
           display: inline-block;
           width: 32%;
           margin-bottom: 50px;
           text-align: center; }
-          /* line 902, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+          /* line 931, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
           #block-views-services-we-offer-block .block__content .view-content .views-row .views-field-title {
             margin-bottom: 20px; }
 
-  /* line 909, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 938, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   .l-footer {
     width: 100%;
     float: right;
@@ -1010,16 +1026,16 @@ h2 {
     margin-top: 110px;
     min-height: 375px;
     background: transparent url("../../../images/footer/Footer_x3_Retina%20HD.png") repeat-x scroll 0% 90%/75% auto; }
-    /* line 914, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    /* line 943, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
     .l-footer #block-block-5 {
       margin-top: 29%;
       color: #fff;
       font-weight: bold;
       text-align: center; }
-      /* line 919, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+      /* line 948, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
       .l-footer #block-block-5 p {
         font-size: 24px; }
-      /* line 922, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+      /* line 951, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
       .l-footer #block-block-5 .footer-number {
         background: #fff;
         border-radius: 10px;
@@ -1029,28 +1045,28 @@ h2 {
         display: inline-block;
         width: 20%; }
 
-  /* line 933, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 962, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   .group-enquiries {
     width: 100%;
     float: right;
     margin-left: 0;
     margin-right: 0;
     clear: none; }
-    /* line 936, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    /* line 965, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
     .group-enquiries .group-personal {
       width: 32.20339%;
       float: left;
       margin-right: -100%;
       margin-left: 0;
       clear: none; }
-    /* line 939, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    /* line 968, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
     .group-enquiries .group-message {
       width: 66.10169%;
       float: right;
       margin-left: 0;
       margin-right: 0;
       clear: none; }
-    /* line 942, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    /* line 971, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
     .group-enquiries .form-actions {
       width: 100%;
       float: right;
@@ -1058,45 +1074,45 @@ h2 {
       margin-right: 0;
       clear: none; }
 
-  /* line 947, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 976, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   input[type='text'] {
     width: 100%;
     height: 40px; }
 
-  /* line 951, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 980, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   textarea {
     border: #ccc 1px solid;
     height: 188px; }
 
-  /* line 955, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 984, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   .find-us {
     left: 60%; } }
 @media (min-width: 1200px) {
-  /* line 963, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 992, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   h2 {
     margin-top: 75px;
     margin-bottom: 40px;
     font-family: cabin-font;
     font-size: 22px; }
 
-  /* line 969, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 998, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   p {
     font-size: 14px; }
 
-  /* line 972, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 1001, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   .l-page-container {
     width: 1200px;
     margin: 0 auto;
     overflow: hidden;
     *zoom: 1; }
-    /* line 976, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    /* line 1005, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
     .l-page-container .l-page-wrapper {
       width: 100%;
       float: right;
       margin-left: 0;
       margin-right: 0;
       clear: none; }
-    /* line 979, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    /* line 1008, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
     .l-page-container .l-header {
       width: 100%;
       float: right;
@@ -1105,28 +1121,28 @@ h2 {
       clear: none;
       overflow: hidden;
       *zoom: 1; }
-      /* line 983, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+      /* line 1012, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
       .l-page-container .l-header .l-branding {
         width: 100%;
         float: right;
         margin-left: 0;
         margin-right: 0;
         clear: none; }
-      /* line 986, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+      /* line 1015, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
       .l-page-container .l-header .l-menu {
         width: 100%;
         float: right;
         margin-left: 0;
         margin-right: 0;
         clear: none; }
-      /* line 990, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+      /* line 1019, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
       .l-page-container .l-header .l-logo {
         width: 74.57627%;
         float: left;
         margin-right: -100%;
         margin-left: 0;
         clear: none; }
-      /* line 993, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+      /* line 1022, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
       .l-page-container .l-header .l-region--branding {
         width: 23.72881%;
         float: right;
@@ -1134,7 +1150,7 @@ h2 {
         margin-right: 0;
         clear: none; }
 
-  /* line 998, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 1027, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   .l-who {
     width: 100%;
     float: right;
@@ -1142,7 +1158,7 @@ h2 {
     margin-right: 0;
     clear: none; }
 
-  /* line 1001, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 1030, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   .l-services {
     width: 100%;
     float: right;
@@ -1150,7 +1166,7 @@ h2 {
     margin-right: 0;
     clear: none; }
 
-  /* line 1004, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 1033, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   .l-main {
     width: 100%;
     float: right;
@@ -1158,7 +1174,7 @@ h2 {
     margin-right: 0;
     clear: none; }
 
-  /* line 1008, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 1037, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   #block-block-2 .block__content {
     margin-bottom: 75px;
     width: 49.15254%;
@@ -1166,11 +1182,11 @@ h2 {
     margin-right: -100%;
     margin-left: 25.42373%;
     clear: none; }
-    /* line 1011, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    /* line 1040, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
     #block-block-2 .block__content p {
       margin: 0; }
 
-  /* line 1017, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 1046, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   #block-block-6 .block__content {
     width: 49.15254%;
     float: left;
@@ -1179,19 +1195,19 @@ h2 {
     clear: none;
     margin-bottom: 40px; }
 
-  /* line 1022, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 1051, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   #block-block-4 {
     width: 100%;
     float: right;
     margin-left: 0;
     margin-right: 0;
     clear: none; }
-    /* line 1024, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    /* line 1053, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
     #block-block-4 h2 {
       margin-top: 75px;
       margin-bottom: 40px;
       font-family: cabin-font; }
-    /* line 1029, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    /* line 1058, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
     #block-block-4 .block__content {
       margin-bottom: 75px;
       width: 49.15254%;
@@ -1199,53 +1215,53 @@ h2 {
       margin-right: -100%;
       margin-left: 25.42373%;
       clear: none; }
-      /* line 1032, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+      /* line 1061, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
       #block-block-4 .block__content p {
         margin: 0; }
 
-  /* line 1037, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 1066, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   #block-views-services-we-offer-block {
     width: 100%;
     float: right;
     margin-left: 0;
     margin-right: 0;
     clear: none; }
-    /* line 1039, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    /* line 1068, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
     #block-views-services-we-offer-block img {
       width: 80px; }
-    /* line 1042, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    /* line 1071, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
     #block-views-services-we-offer-block .block__content {
       width: 66.10169%;
       float: left;
       margin-right: -100%;
       margin-left: 16.94915%;
       clear: none; }
-      /* line 1044, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+      /* line 1073, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
       #block-views-services-we-offer-block .block__content a {
         color: #6d6e70;
         text-decoration: none;
         font-size: 18px; }
-        /* line 1048, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+        /* line 1077, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
         #block-views-services-we-offer-block .block__content a:hover {
           color: #4baedb; }
-      /* line 1052, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+      /* line 1081, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
       #block-views-services-we-offer-block .block__content .view-content {
         width: 100%;
         float: right;
         margin-left: 0;
         margin-right: 0;
         clear: none; }
-        /* line 1054, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+        /* line 1083, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
         #block-views-services-we-offer-block .block__content .view-content .views-row {
           display: inline-block;
           width: 32%;
           margin-bottom: 50px;
           text-align: center; }
-          /* line 1059, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+          /* line 1088, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
           #block-views-services-we-offer-block .block__content .view-content .views-row .views-field-title {
             margin-bottom: 20px; }
 
-  /* line 1066, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 1095, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   .l-footer {
     width: 100%;
     float: right;
@@ -1255,16 +1271,16 @@ h2 {
     margin-top: 110px;
     min-height: 615px;
     background: transparent url("../../../images/footer/Footer_x3_Retina%20HD.png") repeat-x scroll 0% 90%/75% auto; }
-    /* line 1071, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    /* line 1100, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
     .l-footer #block-block-5 {
       margin-top: 40%;
       color: #fff;
       font-weight: bold;
       text-align: center; }
-      /* line 1076, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+      /* line 1105, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
       .l-footer #block-block-5 p {
         font-size: 24px; }
-      /* line 1079, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+      /* line 1108, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
       .l-footer #block-block-5 .footer-number {
         background: #fff;
         border-radius: 10px;
@@ -1272,28 +1288,28 @@ h2 {
         padding: 10px;
         font-size: 18px; }
 
-  /* line 1088, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 1117, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   .group-enquiries {
     width: 100%;
     float: right;
     margin-left: 0;
     margin-right: 0;
     clear: none; }
-    /* line 1091, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    /* line 1120, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
     .group-enquiries .group-personal {
       width: 32.20339%;
       float: left;
       margin-right: -100%;
       margin-left: 0;
       clear: none; }
-    /* line 1094, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    /* line 1123, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
     .group-enquiries .group-message {
       width: 66.10169%;
       float: right;
       margin-left: 0;
       margin-right: 0;
       clear: none; }
-    /* line 1097, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+    /* line 1126, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
     .group-enquiries .form-actions {
       width: 100%;
       float: right;
@@ -1301,17 +1317,17 @@ h2 {
       margin-right: 0;
       clear: none; }
 
-  /* line 1102, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 1131, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   input[type='text'] {
     width: 100%;
     height: 40px; }
 
-  /* line 1106, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 1135, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   textarea {
     border: #ccc 1px solid;
     height: 188px; }
 
-  /* line 1110, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  /* line 1139, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   .find-us {
     left: 70%; } }
 

@@ -80,7 +80,36 @@
 .service-row > div {
   display:inline-block;
 }
+.view-services-we-offer.view-display-id-block_1 {
+  .views-field-title {
+    a {
+      img {
+        margin-top:0;
+      }
+    }
+  }
+
+}
+.view-services-we-offer {
+  .views-field-title {
+    a {
+      img {
+        margin-top:30px;
+      }
+    }
+  }
+}
 .service-row {
+  .service-row-body {
+    a {
+      text-decoration: none;
+      color: #4d4d4d;
+      font-family: 'open-sans-font-bold';
+      &:hover{
+        color:#4baedb;
+      }
+    }
+  }
   .service-row-left-col {
     width:20%;
     img {
@@ -333,10 +362,10 @@ h2 {
   margin-top: -75px;
 }
 .mobile-size .social-icon-selected {
-  background:url('../../../images/Icons/social/3x_Retina_HD/Social_dropdown_selected_3x.png') no-repeat 0 0 /39px 46px !important;
+  background:url('../../../images/Icons/social/3x_Retina_HD/Social_dropdown_selected_3x.png') no-repeat 0 0 /33px 33px !important;
 }
 .mobile-size #social-icon {
-  background:url('../../../images/Icons/social/3x_Retina_HD/Social_dropdown_unselected_3x.png') no-repeat 0 0 /39px 46px;
+  background:url('../../../images/Icons/social/3x_Retina_HD/Social_dropdown_unselected_3x.png') no-repeat 0 0 /33px 33px;
   display:block;
   height:65px;
 //  width:45px;
