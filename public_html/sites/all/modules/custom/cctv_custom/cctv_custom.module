@@ -25,7 +25,7 @@ function cctv_custom_entity_presave($entity, $type) {
 //      )
     );
 
-//    drupal_mail('cctv_custom', 'contact_us', 'contact@centralsurveillance.co.uk', language_default(), $params);
+    drupal_mail('cctv_custom', 'contact_us', 'contact@centralsurveillance.co.uk', language_default(), $params);
     drupal_mail('cctv_custom', 'contact_us', 'ben@codepulse.co.uk', language_default(), $params);
   }
 

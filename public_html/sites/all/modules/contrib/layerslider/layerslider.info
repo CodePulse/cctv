@@ -1,0 +1,6 @@
+name = LayerSlider
+description = Allows administrators to create and configure LayerSlider of multiple layers of image, text and video all with transitions, timing and animation.
+package = LayerSlider
+core = 7.x
+
+configure = admin/config/media/layerslider

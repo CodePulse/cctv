@@ -103,6 +103,16 @@
     </div>
   </div>
 
+  <div class="l-service-slider">
+    <div class="l-page-container">
+
+      <div class="l-service-slider">
+        <?php print render($page['service_slider']); ?>
+      </div>
+    </div>
+  </div>
+
+
   <div class="l-who">
     <div class="l-page-container">
 
@@ -159,4 +169,16 @@
     <?php print render($page['footer']); ?>
       </div>
   </footer>
+</div>
+
+
+<div class="service-row">
+  <div class="service-row-left-col">
+    <div class="service-row-icon"></div>
+  </div>
+  <div class="service-row-right-col">
+    <h3 class="service-row-title"></h3>
+    <div class="service-row-body"></div>
+
+  </div>
 </div>

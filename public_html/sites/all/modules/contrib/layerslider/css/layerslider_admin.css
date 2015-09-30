@@ -1,0 +1,228 @@
+/* ---- vertical tabs elements ----- */
+.vertical-tabs .form-type-textfield input {
+  width: auto;
+}
+* html .vertical-tabs .form-type-textfield,
+* html .vertical-tabs .form-textarea-wrapper {
+  width: auto; /* IE6 */
+}
+.layerslider {
+  position: relative;
+}
+.layerslider .ls-layer {
+  border: 1px solid #ccc;
+  display: block;
+  box-shadow: 0px 5px 10px -8px black;
+  /*- new -*/
+  width: 100%;
+  height: 100%;
+}
+.ls-inner {
+  overflow:visible;
+}
+.ls-layer iframe {
+  pointer-events: none;
+}
+
+/*.ls-layer .selected { background: #FECA40; }*/
+
+#colorpicker {
+  position: relative;
+  width: 340px;
+}
+#colorpicker .farbtastic {
+  position: absolute;
+  z-index: 10;
+  right: 0;
+  top: 0;
+}
+#edit-globalbgimage, #edit-yourlogo, #edit-background-image {
+  background: url(../images/browse_icon.png) no-repeat right center;
+  padding-right: 25px;
+}
+
+#layerslider-edit-slide {
+ min-width: 1250px;
+}
+#layerslider-edit-slide .form-actions {
+  clear: both;
+}
+
+/* -- slide setting box --- */
+#edit-layerslider-slide-options fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+#edit-layerslider-slide-options fieldset legend {
+  float: left !important;
+  width: 150px;
+  height: 30px;
+}
+#edit-layerslider-slide-options fieldset legend span.fieldset-legend {
+  background: none;
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+  text-transform: capitalize;
+}
+#edit-layerslider-slide-options fieldset .fieldset-wrapper {
+  float: left;
+  width: 75%;
+}
+#edit-layerslider-slide-options .form-item {
+  padding: 0;
+  margin: 0;
+  width: 33%;
+  float: left;
+}
+#edit-layerslider-slide-options .form-item label, #edit-layerslider-slide-options .form-item input,
+#edit-layerslider-slide-options .form-item .description {
+  display: inline;
+  font-weight: normal;
+}
+#edit-layerslider-slide-options .form-item label {
+  width: 70px;
+  padding-right: 5px;
+  float: left;
+  text-align: right;
+}
+#edit-layerslider-slide-options .remove {
+  background: url(../images/remove_icon.png) no-repeat center center;
+  font-size: 0;
+  text-decoration: -9999px;
+  width: 13px;
+  height: 13px;
+  display: inline-block;
+}
+
+/* --- slide preview box --- */
+#edit-layerslider-slide-preview label {
+  background: #eee;
+  border: 1px solid #ddd;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+}
+#edit-layerslider-slide-animation-preview {
+  text-align: center;
+  margin: -5px auto 10px auto;
+  width: 150px;
+  display: block;
+}
+/* --- add layer box ---- */
+#edit-layerslider-add-layer {
+  padding: 0;
+  margin: 0;
+  background: #eee;
+}
+#edit-layerslider-add-layer legend {
+  float: left !important;
+  width: 120px;
+  height: 30px;
+}
+#edit-text, #edit-image, #edit-video {
+  margin: 6px;
+  float: left;
+  font-size: 12px;
+  text-decoration: none;
+  color: #333;
+}
+
+#edit-text {
+  padding-left: 16px;
+  background: url(../images/add-text-icon.png) no-repeat left center;
+}
+#edit-image {
+  padding-left: 20px;
+  background: url(../images/add-image-icon.png) no-repeat left center;
+}
+#edit-video {
+  padding-left: 20px;
+  background: url(../images/add-video-icon.png) no-repeat left center;
+}
+
+
+
+#layerslider-edit-slide #edit-layerslider-slide-layer {
+  float: left;
+  width: 22%;
+}
+#layerslider-edit-slide .vertical-tabs {
+  float: right;
+  width: 75%;
+}
+
+/* --- layer list box ---- */
+ul#sortable, ul#sortable li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+ul#sortable li {
+  padding: 2px 5px;
+  height: 20px;
+  overflow: hidden;
+  background: #eee;
+  margin-bottom: 5px;
+}
+ul#sortable li img {
+  height: 20px;
+  width: auto;
+  vertical-align: bottom;
+}
+ul#sortable li.selected {
+  background: #ccc;
+}
+ul#sortable li .layerslider_delete_layer {
+  float: right;
+  background: url(../images/remove_icon.png) no-repeat center center;
+  font-size: 0;
+  text-decoration: -9999px;
+  width: 20px;
+  height: 20px;
+}
+
+/* ----- layer setting box ---- */
+#layerslider-edit-slide .vertical-tabs .form-item label, #layerslider-edit-slide .vertical-tabs .form-item input,
+#layerslider-edit-slide .vertical-tabs .form-item .description {
+  display: inline;
+  font-weight: normal;
+}
+#layerslider-edit-slide .vertical-tabs .form-item {
+  padding: 10px 0;
+  margin: 0;
+  width: 25%;
+  float: left;
+}
+#layerslider-edit-slide .vertical-tabs .form-type-textarea {
+  float: none;
+  clear: both;
+  width: auto;
+}
+#layerslider-edit-slide .vertical-tabs fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+#layerslider-edit-slide .vertical-tabs fieldset .fieldset-wrapper {
+  padding: 0;
+  margin: 0;
+}
+#layerslider-edit-slide .vertical-tabs fieldset legend {
+  height: 10px;
+  padding: 5px 0;
+}
+#layerslider-edit-slide .vertical-tabs fieldset legend span.fieldset-legend {
+  background: none;
+  font-weight: normal;
+  text-transform: capitalize;
+  padding: 0;
+  margin: 0;
+}
+#edit-css-file {
+  padding: 10px 0;
+  width: 25%;
+  float: left;
+}
+

@@ -1,0 +1,478 @@
+<?php
+
+/**
+ * @file
+ * A module that include layer slider of banner with different effects.
+ *
+ * Maintainer: http://www.developmenticon.com/
+ * Written by Himanshu Shakhar (developmenticon)
+ */
+
+define('LAYERSLIDER_PLUGIN_VERSION', '1.0');
+
+/**
+ * Implements hook_help().
+ *
+ * Displays help and module information.
+ */
+function layerslider_help($path, $arg) {
+  switch ($path) {
+    case "admin/help#layerslider":
+      return '<p>' . t("Layer Slider with different images and text animation, effects.") . '</p>';
+      break;
+  }
+}
+
+/**
+ * Implements hook_permission().
+ */
+function layerslider_permission() {
+  $perms = array(
+    'administer layerslider' => array(
+      'title' => t('Administer Layer Slider'),
+      'restrict access' => TRUE,
+    ),
+  );
+  return $perms;
+}
+
+/**
+ * Implements hook_menu().
+ */
+function layerslider_menu() {
+  //List Banners.
+    $items['admin/config/media/layerslider'] = array(
+    'title' => t('LayerSlider'),
+    'description' => 'Create and configure LayerSlider of multiple layers of image, text and video all with transitions, timing and animation.',
+    'page callback' => 'layerslider_overview_page',
+    'access callback' => 'user_access',
+    'access arguments' => array('administer layerslider'),
+    'file' => 'layerslider.admin.inc',
+  );
+  $items['admin/config/media/layerslider/list'] = array(
+    'title' => 'List layerslider',
+    'type' => MENU_DEFAULT_LOCAL_TASK,
+    'weight' => -10,
+  );
+  //Add Banner.
+  $items['admin/config/media/layerslider/add'] = array(
+    'title' => 'Add Banner',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('layerslider_edit_banner','add'),
+    'access arguments' => array('administer layerslider'),
+    'description' => 'Add the layerslider banner.',
+    'type' => MENU_LOCAL_ACTION,
+    'file' => 'layerslider.admin.inc',
+  );
+  //Edit Banner.
+  $items['admin/config/media/layerslider/manage/%layerslider/edit'] = array(
+    'title' => 'Edit Banner',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('layerslider_edit_banner', 'edit', 5),
+    'access arguments' => array('administer layerslider'),
+    'file' => 'layerslider.admin.inc',
+  );
+  //Delete Banner.
+  $items['admin/config/media/layerslider/manage/%layerslider/delete'] = array(
+    'title' => 'Delete Banner',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('layerslider_delete_banner', 5),
+    'access arguments' => array('administer layerslider'),
+    'file' => 'layerslider.admin.inc',
+  );
+  //List slides.
+  $items['admin/config/media/layerslider/manage/%layerslider'] = array(
+    'title' => 'Customize Banner',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('layerslider_overview_form', 5),
+    'title callback' => 'layerslider_overview_title',
+    'title arguments' => array(5),
+    'access arguments' => array('administer layerslider'),
+    'file' => 'layerslider.admin.inc',
+  );
+  //Add slide.
+  $items['admin/config/media/layerslider/manage/%layerslider/add'] = array(
+    'title' => 'Add slide',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('layerslider_edit_slide', 'add', 5, NULL),
+    'access arguments' => array('administer layerslider'),
+    'type' => MENU_LOCAL_ACTION,
+    'file' => 'layerslider.admin.inc',
+  );
+  //Edit slide.
+  $items['admin/config/media/layerslider/slide/%layerslider_slide/edit'] = array(
+    'title' => 'Edit slide',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('layerslider_edit_slide', 'edit', NULL, 5),
+    'access arguments' => array('administer layerslider'),
+    'file' => 'layerslider.admin.inc',
+  );
+  //Delete slide.
+  $items['admin/config/media/layerslider/slide/%layerslider_slide/delete'] = array(
+    'title' => 'Delete slide',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('layerslider_delete_slide', 'delete', 5),
+    'access arguments' => array('administer layerslider'),
+    'file' => 'layerslider.admin.inc',
+  );
+  //open css file of banner.
+  $items['admin/config/media/layerslider/manage/%layerslider/css'] = array(
+    'title' => 'Banner CSS',
+    'page callback' => 'layerslider_stylesheet',
+    'page arguments' => array(5),
+    'access arguments' => array('administer layerslider'),
+    'file' => 'layerslider.admin.inc',
+  );
+
+  return $items;
+}
+
+
+/**
+ * Implements hook_theme().
+ */
+function layerslider_theme() {
+  return array(
+    'layerslider_admin_overview' => array(
+      'file' => 'layerslider.admin.inc',
+      'variables' => array('title' => NULL, 'name' => NULL, 'description' => NULL),
+    ),
+    'layerslider_overview_form' => array(
+      'file' => 'layerslider.admin.inc',
+      'render element' => 'form',
+    ),
+   'layerslider_content' => array(
+      'variables' => array('layerslider_data' => NULL, 'settings' => NULL, 'preview' => FALSE),
+      'template' => 'theme/layerslider-content',
+      'file' => 'theme/layerslider.theme.inc',
+    ),
+   'layerslider_css_page' => array(
+      'variables' => array('content' => NULL),
+      'template' => 'theme/layerslider-css-page',
+    ),
+  );
+}
+
+/**
+ * Title callback for the layerslider overview page.
+ */
+function layerslider_overview_title($layerslider) {
+  return $layerslider['title'];
+}
+
+/**
+ * Load the data for a single layerslider.
+ *
+ * @param $layerslider_name
+ *   The unique name of a layerslider to load.
+ * @return
+ *   Array defining the layerslider, or FALSE if the layerslider doesn't exist.
+ */
+function layerslider_load($layerslider_name) {
+  $all_layersliders = layerslider_load_all();
+  return isset($all_layersliders[$layerslider_name]) ? $all_layersliders[$layerslider_name] : FALSE;
+}
+
+/**
+ * Load all layerslider data.
+ *
+ * @return
+ *   Array of layerslider data.
+ */
+function layerslider_load_all() {
+  $layersliders = &drupal_static(__FUNCTION__);
+  if (!isset($layersliders)) {
+    if ($cached = cache_get('layerslider', 'cache_layerslider')) {
+      $layersliders = $cached->data;
+    }
+    else {
+      $layersliders = db_query('SELECT * FROM {layerslider}')->fetchAllAssoc('layerslider_name', PDO::FETCH_ASSOC);
+      cache_set('layerslider', $layersliders, 'cache_layerslider');
+    }
+  }
+  return $layersliders;
+}
+
+/**
+ * Save a layerslider.
+ *
+ * @param $layerslider
+ *   An array representing a layerslider:
+ *   - layerslider_name: The unique name of the layerslider (composed of lowercase
+ *     letters, numbers, and hyphens).
+ *   - title: The human readable layerslider title.
+ *   - description: The layerslider description.
+ *   - optionset: The layerslider option set array.
+ */
+function layerslider_save($layerslider) {
+  $status = db_merge('layerslider')
+    ->key(array('layerslider_name' => $layerslider['layerslider_name']))
+    ->fields(array(
+      'title' => $layerslider['title'],
+      'description' => $layerslider['description'],
+      'optionset' => serialize($layerslider['optionset']),
+    ))
+    ->execute();
+}
+
+/**
+ * Delete a layerslider and all contained slides.
+ * hook_menu_delete().
+ */
+function layerslider_delete($layerslider) {
+  // Delete all slides from the layerslider.
+  db_delete('layerslider_slides')
+    ->condition('layerslider_name', $layerslider['layerslider_name'])
+    ->execute();
+
+  // Delete the layerslider.
+  db_delete('layerslider')
+    ->condition('layerslider_name', $layerslider['layerslider_name'])
+    ->execute();
+}
+
+/**
+ * Load slide data.
+ * @param $slideid
+ *   The slideid of the layerslider slide.
+ */
+function layerslider_slide_load($slideid) {
+  if (is_numeric($slideid)) {
+    $query = db_select('layerslider_slides', 'ml');
+    $query->fields('ml');
+    $query->condition('ml.slideid', $slideid);
+    if ($slide = $query->execute()->fetchAssoc()) {
+      return $slide;
+    }
+  }
+  return FALSE;
+}
+
+/**
+ * Save a layerslider slide.
+ *
+ * @param $slide
+ *   An array representing a layerslider slide:
+ *   - slideid: The unique id of the slide
+ *   - layerslider_name: The parent layerslider name.
+ *   - slide_title: The human readable slide title.
+ *   - weight: The slide order value.
+ *   - slide_markup: The slide markup which will used for animation.
+ */
+function layerslider_slide_save($slide) {
+  $status = db_merge('layerslider_slides')
+    ->key(array('slideid' => $slide['slideid']))
+    ->fields(array(
+      'layerslider_name' => $slide['layerslider_name'],
+      'slide_title' => $slide['slide_title'],
+      'weight' => $slide['weight'],
+      'slide_markup' => $slide['slide_markup'],
+    ))
+    ->execute();
+}
+
+/**
+ * Delete a layerslider slide.
+ * hook_menu_delete().
+ */
+function layerslider_slide_delete($slide) {
+
+  // Delete the slide.
+  db_delete('layerslider_slides')
+    ->condition('slideid', $slide)
+    ->execute();
+}
+
+
+/**
+ * Implements hook_block_info().
+ */
+function layerslider_block_info() {
+  $layersliders = layerslider_get_layersliders();
+
+  $blocks = array();
+  foreach ($layersliders as $name => $title) {
+    $blocks[$name]['info'] = check_plain($title);
+    $blocks[$name]['cache'] = DRUPAL_CACHE_GLOBAL;
+  }
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function layerslider_block_view($delta = '') {
+  $layersliders = layerslider_get_layersliders();
+
+  $data['subject'] = NULL;
+  $data['content'] = layerslider_load_layersliders($delta);
+  return $data;
+}
+
+/**
+ * Return an associative array of the layersliders names.
+ *   An array with the machine-readable names as the keys, and human-readable
+ *   titles as the values.
+ */
+function layerslider_get_layersliders() {
+  $layersliders = layerslider_load_all();
+  foreach ($layersliders as $layerslider_name => $layerslider) {
+    $layersliders[$layerslider_name] = t($layerslider['title']);
+  }
+  return $layersliders;
+}
+
+/**
+ * Load layerslider and all contained slides.
+ *
+ * @return
+ *   Array of layerslider with contained slides data.
+ */
+function layerslider_load_layersliders($delta) {
+
+  $result = db_query("SELECT * FROM {layerslider_slides} WHERE layerslider_name = :layerslider ORDER BY weight", 
+  array(':layerslider' => $delta), array('fetch' => PDO::FETCH_ASSOC));
+
+  $layerslider = layerslider_load($delta);
+
+  if($result->rowCount() > 0) {
+    drupal_add_css('public://layerslider/' . $delta . '.css'); // add banners css file
+    return theme('layerslider_content', array('layerslider_data' => $result, 'settings' => unserialize($layerslider['optionset']), 'preview' => FALSE));
+  }
+  return FALSE;
+}
+
+/**
+ * Implements hook_libraries_info().
+ */
+function layerslider_libraries_info() {
+  $libraries['layerslider'] = array(
+    'name' => 'LayerSlider',
+    'vendor url' => 'http://developmenticon.com/layerslider/',
+    'download url' => 'https://github.com/developmenticon/layerslider',
+    'version arguments' => array(
+      'file' => 'layerslider.kreaturamedia.jquery.js',
+      // LayerSlider v1.0
+      'pattern' => '@(?i:LayerSlider) v([0-9\.a-z]+)@',
+      'lines' => 5,
+    ),
+    'files' => array(
+      'js' => array(
+        'js/layerslider.kreaturamedia.jquery.js',
+        'jQuery/jquery-easing-1.3.js',
+      ),
+      'css' => array(
+        'css/layerslider.css',
+      ),
+    ),
+  );
+
+  return $libraries;
+}
+
+/**
+ * Implements hook_library().
+ * @author himanshu <developmenticon@gmail.com>
+ */
+function layerslider_library() {
+  $library_path = libraries_get_path('layerslider');
+
+  $libraries['layerslider'] = array(
+    'title' => 'Layerslider',
+    'website' => 'http://developmenticon.com/',
+    'version' => LAYERSLIDER_PLUGIN_VERSION,
+    'js' => array(
+      $library_path . '/jQuery/jquery-easing-1.3.js' => array(),
+      $library_path . '/js/layerslider.kreaturamedia.jquery.js' => array(),
+    ),
+    'css' => array(
+      $library_path . '/css/layerslider.css' => array(
+        'type' => 'file',
+        'media' => 'screen',
+      ),
+    ),
+  );
+  return $libraries;
+}
+
+/*
+ * This function loads the required JavaScripts and settings for a layerslider
+ * instance.
+ *
+ * @param string $id [optional]
+ *  ID Attribute for layerslider
+ * @param string $optionset [optional]
+ *  Option set to load
+ */
+function layerslider_add($id = NULL, $optionset = NULL, $preview = TRUE) {
+  // Static array to remember which scripts are already attached.
+  // @todo not currently in use
+  $cache = &drupal_static(__FUNCTION__, array());
+
+  // @todo investigate the best way to cache data loaded from drupal_add_library()
+  drupal_add_library('layerslider', 'layerslider');
+
+  if (!empty($id) && !empty($optionset)) {
+    // JavaScript settings
+    $js_settings = array(
+      'instances' => array(
+        'layerslider-' . $id => 'layerslider-' . $id,
+      ),
+      'optionsets' => array(
+        'layerslider-' . $id => $optionset,
+      ),
+    );
+
+    if($preview == FALSE) {
+      drupal_add_js(array('layerslider' => $js_settings), 'setting');
+      // Loader JavaScript
+      drupal_add_js(drupal_get_path('module', 'layerslider') . '/js/layerslider.load.js');
+    }
+  }
+}
+
+
+/**
+ *  Settings for a option set
+ */
+function _layerslider_optionset($optionset) {
+  return array(
+    'autoStart'               => $optionset['autoStart'],
+    'firstLayer'              => $optionset['firstLayer'],
+    'twoWaySlideshow'         => $optionset['twoWaySlideshow'],
+    'keybNav'                 => $optionset['keybNav'],
+    'touchNav'                => $optionset['touchNav'],
+    'imgPreload'              => $optionset['imgPreload'],
+    'navPrevNext'             => $optionset['navPrevNext'],
+    'navStartStop'            => $optionset['navStartStop'],
+    'navButtons'              => $optionset['navButtons'],
+    'skin'                    => !empty($optionset['skin']) ? $optionset['skin'] : 'defaultskin',
+    'skinsPath'               => $GLOBALS['base_path'].$optionset['skinsPath'],
+    'pauseOnHover'            => $optionset['pauseOnHover'],
+    'globalBGColor'           => !empty($optionset['globalBGColor']) ? $optionset['globalBGColor'] : 'transparent',
+    'globalBGImage'           => !empty($optionset['globalBGImage']) ? $optionset['globalBGImage'] : false,
+    'animateFirstLayer'       => $optionset['animateFirstLayer'],
+    'loops'                   => $optionset['loops'],
+    'forceLoopNum'            => $optionset['forceLoopNum'],
+    'autoPlayVideos'          => $optionset['autoPlayVideos'],
+    'autoPauseSlideshow'      => $optionset['autoPauseSlideshow'],
+    'youtubePreview'          => $optionset['youtubePreview'],
+    'yourLogo'                => !empty($optionset['yourLogo']) ? $optionset['yourLogo'] : false,
+    'yourLogoStyle'           => !empty($optionset['yourLogoStyle']) ? $optionset['yourLogoStyle'] : 'position: absolute; z-index: 1001; left: 10px; top: 10px;',
+    'yourLogoLink'            => !empty($optionset['yourLogoLink']) ? $optionset['yourLogoLink'] : false,
+    'yourLogoTarget'          => $optionset['yourLogoTarget'],
+ 
+    // you can change this settings separately by layers or sublayers with using html style attribute
+ 
+    'slideDirection'          => 'right',
+    'slideDelay'              => 4000,
+    'parallaxIn'              => .45,
+    'parallaxOut'             => .45,
+    'durationIn'              => 1000,
+    'durationOut'             => 1000,
+    'easingIn'                => 'easeInOutQuint',
+    'easingOut'               => 'easeInOutQuint',
+    'delayIn'                 => 0,
+    'delayOut'                => 0
+  );
+}

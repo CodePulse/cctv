@@ -70,6 +70,37 @@
   font-style: normal;
 
 }
+.l-service-slider {
+  max-height: 310px;
+  overflow: hidden;
+}
+.view-list-of-services .views-field-field-icon {
+//  float:left;
+}
+.service-row > div {
+  display:inline-block;
+}
+.service-row {
+  .service-row-left-col {
+    width:20%;
+    img {
+      width:160px;
+    }
+  }
+  .service-row-right-col {
+    width:78%;
+    vertical-align: top;
+  }
+  h3 {
+    a{
+      text-decoration: none;
+      color: #4D4D4D;
+      &:hover{
+        color:#4baedb;
+      }
+    }
+  }
+}
 p {
   font-size:14px;
 }

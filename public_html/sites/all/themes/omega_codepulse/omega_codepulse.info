@@ -31,6 +31,7 @@ regions[sidebar_first] = First Sidebar
 regions[sidebar_second] = Second Sidebar
 regions[footer] = Footer
 regions[slider] = Slider
+regions[service_slider] = Service Slider
 regions[who] = Who we are
 regions[services] = Services
 regions[map] = Map

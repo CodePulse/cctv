@@ -8,6 +8,7 @@ template = front-layout
 regions[branding] = Branding
 regions[navigation] = Navigation
 regions[slider] = Slider
+regions[service_slider] = Service Slider
 regions[who] = Who we are
 regions[services] = Services
 regions[content] = Content

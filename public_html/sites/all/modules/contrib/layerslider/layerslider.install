@@ -1,0 +1,150 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the layerslider module.
+ */
+
+
+/**
+ * Implements hook_requirements().
+ */
+function layerslider_requirements($phase) {
+  $requirements = array();
+
+  if ($phase == 'runtime') {
+    $t = get_t();
+    $path = libraries_get_path('layerslider');
+    $installed = file_exists($path . '/js/layerslider.kreaturamedia.jquery.js') && file_exists($path . '/jQuery/jquery-easing-1.3.js') && file_exists($path . '/css/layerslider.css');
+
+    $library = libraries_detect('layerslider');
+    $error_type = isset($library['error']) ? drupal_ucfirst($library['error']) : '';
+    $error_message = isset($library['error message']) ? $library['error message'] : '';
+
+    if (empty($library['installed'])) {
+      $requirements['layerslider_plugin'] = array(
+        'title' => $t('Layerslider plugin'),
+        'value' => $t('@e: At least @a', array('@e' => $error_type, '@a' => LAYERSLIDER_PLUGIN_VERSION)),
+        'severity' => REQUIREMENT_ERROR,
+        'description' => $t('!error You need to download the !layerslider, extract the archive and place the layerslider directory in the %path directory on your server.', array('!error' => $error_message, '!layerslider' => l($t('Layerslider plugin'), $library['download url']), '%path' => 'sites/all/libraries')),
+      );
+    }
+    elseif (version_compare($library['version'], LAYERSLIDER_PLUGIN_VERSION, '>=')) {
+      $requirements['layerslider_plugin'] = array(
+        'title' => $t('Layerslider plugin'),
+        'severity' => REQUIREMENT_OK,
+        'value' => $library['version'],
+      );
+    }
+    else {
+      $requirements['layerslider_plugin'] = array(
+        'title' => $t('Layerslider plugin'),
+        'value' => $t('At least @a', array('@a' => LAYERSLIDER_PLUGIN_VERSION)),
+        'severity' => REQUIREMENT_ERROR,
+        'description' => $t('You need to download a later version of the !layerslider and replace the old version located in the %path directory on your server.', array('!layerslider' => l($t('Layerslider plugin'), $library['download url']), '%path' => $library['library path'])),
+      );
+    }
+
+    if(!$installed) {
+      $requirements['layerslider_plugin_file'] = array(
+        'title' => $t('Layerslider plugin file'),
+        'value' => $t('Layerslider library not found'),
+        'severity' => REQUIREMENT_ERROR,
+        'description' => $t('Layerslider library not found. Please consult the README.txt for installation instructions.'),
+      );
+    }
+
+  }
+
+  return $requirements;
+}
+
+
+/**
+ * Implements hook_schema().
+ */
+function layerslider_schema() {
+  $schema['layerslider'] = array(
+    'description' => 'Holds definitions for top-level layerslider.',
+    'fields' => array(
+      'layerslider_name' => array(
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+        'description' => 'Primary Key: Unique key for layerslider.',
+      ),
+      'title' => array(
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+        'description' => 'Layerslider title displayed at top of block.',
+        'translatable' => TRUE,
+      ),
+      'description' => array(
+        'type' => 'text',
+        'not null' => FALSE,
+        'description' => 'Layerslider description.',
+        'translatable' => TRUE,
+      ),
+      'optionset' => array(
+        'description' => 'The options array.',
+        'type' => 'blob',
+        'size' => 'big',
+        'serialize' => TRUE,
+      ),
+    ),
+    'primary key' => array('layerslider_name'),
+  );
+
+  $schema['layerslider_slides'] = array(
+    'description' => 'Contains the individual slides within a layerslider.',
+    'fields' => array(
+      'layerslider_name' => array(
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+        'description' => 'The layerslider name. All slides with the same layerslider name are part of the same layerslider.',
+      ),
+      'slideid' => array(
+        'description' => 'The layerslider slide ID (slideid) is the integer primary key.',
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ),
+      'slide_title' => array(
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+        'description' => 'The text displayed for the slide, which may be modified by a title callback.',
+        'translatable' => TRUE,
+      ),
+      'weight' => array(
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+        'description' => 'Slide weight among slides in the same layerslider at the same depth.',
+      ),
+      'slide_markup' => array(
+        'type' => 'text',
+        'not null' => FALSE,
+        'description' => 'Slide markup.',
+      ),
+    ),
+    'primary key' => array('slideid'),
+  );
+
+  return $schema;
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function layerslider_uninstall() {
+  $filepath = 'public://layerslider';
+  // delete the file.
+  file_unmanaged_delete_recursive($filepath);
+}
