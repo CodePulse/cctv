@@ -160,7 +160,7 @@ input[type='text'] {
     margin-bottom: 40px;
   }
 }
-.l-slider{
+.front .l-slider{
   background:#efefef;
   margin-top:40px;
   background: #efefef url("/sites/all/themes/omega_codepulse/images/The_City_London.jpg") no-repeat 0 -360px / 1960px;
@@ -299,7 +299,7 @@ textarea{
 #block-block-5{
 
   display:block;
-  margin-top:40%;
+  margin-top:47%;
   color:#fff;
   font-weight:bold;
   text-align:center;
@@ -324,7 +324,7 @@ textarea{
   @include grid-span(12, 1);
   margin-top:110px;
   min-height: 245px;
-  background:transparent url("../../../images/footer/Footer_x3_Retina%20HD.png") repeat-x scroll 92% 73% / 1120px auto;
+  background:transparent url("../../../images/footer/Footer_x3_Retina%20HD.png") repeat-x scroll 92% 56% / 1120px auto;
 }
 h2 {
   margin-top: 75px;
@@ -844,7 +844,7 @@ h2 {
   .front .l-slider{
     height:auto;
   }
-  .l-slider{
+  .front .l-slider{
     margin:0;
     min-height: 350px;
 
@@ -1121,7 +1121,7 @@ h2 {
     min-height:615px;
     background:transparent url("../../../images/footer/Footer_x3_Retina%20HD.png") repeat-x scroll 0% 90% / 75% auto;
     #block-block-5{
-      margin-top:40%;
+      margin-top:33%;
       color:#fff;
       font-weight:bold;
       text-align:center;

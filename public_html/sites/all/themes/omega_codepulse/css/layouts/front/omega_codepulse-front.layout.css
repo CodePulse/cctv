@@ -105,13 +105,13 @@ input[type='text'] {
   margin-bottom: 40px; }
 
 /* line 163, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
-.l-slider {
+.front .l-slider {
   background: #efefef;
   margin-top: 40px;
   background: #efefef url("/sites/all/themes/omega_codepulse/images/The_City_London.jpg") no-repeat 0 -360px/1960px;
   min-height: 250px; }
   /* line 168, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
-  .l-slider p {
+  .front .l-slider p {
     margin: 0; }
 
 /* line 173, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
@@ -238,7 +238,7 @@ textarea {
 /* line 299, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
 #block-block-5 {
   display: block;
-  margin-top: 40%;
+  margin-top: 47%;
   color: #fff;
   font-weight: bold;
   text-align: center; }
@@ -268,7 +268,7 @@ textarea {
   clear: none;
   margin-top: 110px;
   min-height: 245px;
-  background: transparent url("../../../images/footer/Footer_x3_Retina%20HD.png") repeat-x scroll 92% 73%/1120px auto; }
+  background: transparent url("../../../images/footer/Footer_x3_Retina%20HD.png") repeat-x scroll 92% 56%/1120px auto; }
 
 /* line 329, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
 h2 {
@@ -859,7 +859,7 @@ h2 {
     height: auto; }
 
   /* line 847, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
-  .l-slider {
+  .front .l-slider {
     margin: 0;
     min-height: 350px; } }
 @media (min-width: 960px) {
@@ -1296,7 +1296,7 @@ h2 {
     background: transparent url("../../../images/footer/Footer_x3_Retina%20HD.png") repeat-x scroll 0% 90%/75% auto; }
     /* line 1123, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
     .l-footer #block-block-5 {
-      margin-top: 40%;
+      margin-top: 33%;
       color: #fff;
       font-weight: bold;
       text-align: center; }
