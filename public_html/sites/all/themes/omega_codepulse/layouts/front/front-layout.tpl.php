@@ -170,15 +170,3 @@
       </div>
   </footer>
 </div>
-
-
-<div class="service-row">
-  <div class="service-row-left-col">
-    <div class="service-row-icon"></div>
-  </div>
-  <div class="service-row-right-col">
-    <h3 class="service-row-title"></h3>
-    <div class="service-row-body"></div>
-
-  </div>
-</div>
