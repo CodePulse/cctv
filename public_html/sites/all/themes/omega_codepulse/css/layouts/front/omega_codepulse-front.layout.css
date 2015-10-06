@@ -112,7 +112,7 @@ input[type='text'] {
 .front .l-slider {
   background: #efefef;
   margin-top: 40px;
-  background: #efefef url("/sites/all/themes/omega_codepulse/images/The_City_London.jpg") no-repeat 0 0/100% auto;
+  background: #efefef url("/sites/all/themes/omega_codepulse/images/The_City_London.jpg") no-repeat 0 0/115% auto;
   min-height: 250px; }
   /* line 174, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   .front .l-slider p {
@@ -251,7 +251,7 @@ textarea {
     font-size: 18px;
     width: 50%;
     margin: 0 auto;
-    padding-top: 30px; }
+    padding-top: 40px; }
   /* line 318, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   #block-block-5 .footer-number {
     background: #fff;
@@ -1364,6 +1364,10 @@ h2 {
 
   /* line 1176, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   .find-us {
-    left: 70%; } }
+    left: 70%; }
+
+  /* line 1180, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
+  .front .l-slider {
+    background: #efefef url("/sites/all/themes/omega_codepulse/images/The_City_London.jpg") no-repeat 0 -305px/100% auto; } }
 
 /*# sourceMappingURL=omega_codepulse-front.layout.css.map */

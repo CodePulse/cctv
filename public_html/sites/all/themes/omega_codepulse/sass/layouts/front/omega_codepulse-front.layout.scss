@@ -169,7 +169,7 @@ input[type='text'] {
 .front .l-slider{
   background:#efefef;
   margin-top:40px;
-  background: #efefef url("/sites/all/themes/omega_codepulse/images/The_City_London.jpg") no-repeat 0 0 / 100% auto;
+  background: #efefef url("/sites/all/themes/omega_codepulse/images/The_City_London.jpg") no-repeat 0 0 / 115% auto;
   min-height:250px;
   p{
     margin:0;
@@ -313,7 +313,7 @@ textarea{
     font-size:18px; // change this for different device check style guide
     width:50%;
     margin:0 auto;
-    padding-top:30px;
+    padding-top:40px;
   }
   .footer-number {
     background:#fff;
@@ -1177,5 +1177,8 @@ h2 {
     left:70%;
   }
 
+  .front .l-slider{
+    background:#efefef url("/sites/all/themes/omega_codepulse/images/The_City_London.jpg") no-repeat 0 -305px/100% auto
+  }
 }
 
