@@ -167,6 +167,7 @@
   <footer class="l-footer" role="contentinfo">
     <div class="l-page-container">
     <?php print render($page['footer']); ?>
-      </div>
+      <p class="footer-help">If you need our help, please call us on <a class="tel footer-number" href="tel:+447805823528" tabindex="-1">+44 7805 823 528</a></p>
+    </div>
   </footer>
 </div>
