@@ -69,6 +69,19 @@
   font-weight: normal;
   font-style: normal;
 }
+
+h1.node-title {
+  font-family: cabin-font;
+  font-size:22px;
+}
+.page-node {
+  .l-content{
+    @include clearfix;
+    margin-bottom: 75px;
+    @include grid-span(6,4);
+  }
+}
+
 .l-footer {
   position:relative;
   .l-page-container{
@@ -1214,7 +1227,7 @@ h2 {
       //    position: absolute;
       .footer-help{
         margin: auto;
-        width: 60%;
+//        width: 60%;
         padding: 10px;
         text-align: center;
         margin-top: 460px;
@@ -1229,7 +1242,7 @@ h2 {
           font-size: 18px;
           text-decoration: none;
           display: inline-block;
-          width: 170px;
+          width: 200px;
           margin: 15px 35px;
         }
 
