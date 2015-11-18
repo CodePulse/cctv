@@ -293,7 +293,7 @@ function codepulse_views_views_default_views() {
   $handler->display->display_options['style_options']['views_slideshow_swiper']['watchSlidesProgress'] = 1;
   $handler->display->display_options['style_options']['views_slideshow_swiper']['watchSlidesVisibility'] = 1;
   $handler->display->display_options['style_options']['views_slideshow_swiper']['freeMode'] = 1;
-  $handler->display->display_options['style_options']['views_slideshow_swiper']['slidesPerView'] = '2';
+  $handler->display->display_options['style_options']['views_slideshow_swiper']['slidesPerView'] = '3';
   $handler->display->display_options['style_options']['views_slideshow_swiper']['swipeHandler'] = '';
   $handler->display->display_options['style_options']['views_slideshow_swiper']['pagination'] = '';
   $handler->display->display_options['style_options']['views_slideshow_swiper']['paginationBulletRender'] = '';
@@ -304,12 +304,6 @@ function codepulse_views_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['header'] = FALSE;
-  /* Header: Global: Text area */
-  $handler->display->display_options['header']['area']['id'] = 'area';
-  $handler->display->display_options['header']['area']['table'] = 'views';
-  $handler->display->display_options['header']['area']['field'] = 'area';
-  $handler->display->display_options['header']['area']['content'] = '<span class="swiper-arrow"><img src="/sites/all/themes/omega_codepulse/images/arrow.png"></span>';
-  $handler->display->display_options['header']['area']['format'] = 'full_html';
   $export['services_we_offer'] = $view;
 
   return $export;
