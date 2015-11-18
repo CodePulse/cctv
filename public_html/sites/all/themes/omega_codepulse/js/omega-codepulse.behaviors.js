@@ -89,5 +89,16 @@
             );
         }
     };
+    Drupal.behaviors.sliderAnimation = {
+        attach: function (context, settings) {
+
+            $(document).ready(function() {
+                $('.l-slider').animate({opacity: 0}, 0).css({'background-image': 'url(/sites/all/themes/omega_codepulse/images/The_City_London.jpg)'}).animate({opacity: 1}, 2500);
+                $('.slider-content-text').fadeOut(1).delay( 100 ).fadeIn( 2500 );
+                $('.slider-link').fadeOut(1).delay( 1000 ).fadeIn( 2500 );
+                //$('.slider-content-text').delay(800).fadeIn(400);
+            });
+        }
+    };
 
 })(jQuery);

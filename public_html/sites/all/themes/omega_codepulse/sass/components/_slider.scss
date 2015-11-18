@@ -1,0 +1,15 @@
+.slider-link{
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 5px;
+  border: 1px solid #fff;
+  &:hover{
+    border: 1px solid #4baedb;
+    color:#4baedb;
+  }
+}
+.slider-text-button {
+  height: 65px;
+  margin-top: 15px !important;
+}

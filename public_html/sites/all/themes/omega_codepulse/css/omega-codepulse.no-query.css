@@ -13,6 +13,23 @@ body {
 .site-logo img {
   max-width: 310px; }
 
+/* line 1, ../sass/components/_slider.scss */
+.slider-link {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 5px;
+  border: 1px solid #fff; }
+  /* line 7, ../sass/components/_slider.scss */
+  .slider-link:hover {
+    border: 1px solid #4baedb;
+    color: #4baedb; }
+
+/* line 12, ../sass/components/_slider.scss */
+.slider-text-button {
+  height: 65px;
+  margin-top: 15px !important; }
+
 /* line 2, ../sass/components/_social_media.scss */
 .social-media li {
   list-style: none;
