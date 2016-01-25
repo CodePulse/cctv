@@ -551,6 +551,14 @@ h2 {
   @include grid-span(12, 1);
 }
 @include breakpoint(720px){//small
+  .view-home-slider {
+    position:relative;
+    .views-field-field-slider-text {
+      position:absolute;
+      top:0;
+      color:#fff;
+    }
+  }
   h2 {
     margin-top:75px;
     margin-bottom:40px;
@@ -618,6 +626,7 @@ h2 {
   .l-menu{
     ul {
       padding:0;
+      z-index:10;
       > li:nth-child(1){
         a{
           padding-left: 0;
