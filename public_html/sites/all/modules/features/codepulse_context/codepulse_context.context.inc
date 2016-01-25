@@ -107,11 +107,11 @@ function codepulse_context_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'block-1' => array(
-          'module' => 'block',
-          'delta' => '1',
+        'views-home_slider-block' => array(
+          'module' => 'views',
+          'delta' => 'home_slider-block',
           'region' => 'slider',
-          'weight' => '-10',
+          'weight' => '-9',
         ),
         'block-2' => array(
           'module' => 'block',
@@ -147,6 +147,38 @@ function codepulse_context_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
+  $context->name = 'services';
+  $context->description = '';
+  $context->tag = '';
+  $context->conditions = array(
+    'node' => array(
+      'values' => array(
+        'service' => 'service',
+      ),
+      'options' => array(
+        'node_form' => '1',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'views-service_gif-block' => array(
+          'module' => 'views',
+          'delta' => 'service_gif-block',
+          'region' => 'service_slider',
+          'weight' => '-9',
+        ),
+      ),
+      'layout' => 'front',
+    ),
+  );
+  $context->condition_mode = 0;
+  $export['services'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
   $context->name = 'sitewide';
   $context->description = '';
   $context->tag = '';
@@ -176,12 +208,6 @@ function codepulse_context_context_default_contexts() {
           'module' => 'system',
           'delta' => 'main',
           'region' => 'content',
-          'weight' => '-10',
-        ),
-        'block-5' => array(
-          'module' => 'block',
-          'delta' => '5',
-          'region' => 'footer',
           'weight' => '-10',
         ),
       ),
