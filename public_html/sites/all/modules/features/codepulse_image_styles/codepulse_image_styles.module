@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Codepulse - Image styles feature.
+ */
+
+include_once 'codepulse_image_styles.features.inc';
