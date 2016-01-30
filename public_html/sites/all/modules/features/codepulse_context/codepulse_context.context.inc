@@ -32,12 +32,6 @@ function codepulse_context_context_default_contexts() {
           'region' => 'navigation',
           'weight' => '-10',
         ),
-        'block-5' => array(
-          'module' => 'block',
-          'delta' => '5',
-          'region' => 'footer',
-          'weight' => '-10',
-        ),
         'block-7' => array(
           'module' => 'block',
           'delta' => '7',
