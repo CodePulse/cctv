@@ -153,7 +153,6 @@ input[type='text'] {
 .front .l-slider {
   background: #efefef;
   margin-top: 40px;
-  background: #efefef url("/sites/all/themes/omega_codepulse/images/The_City_London.jpg") no-repeat 0 0/115% auto;
   min-height: 250px; }
   /* line 215, ../../../sass/layouts/front/omega_codepulse-front.layout.scss */
   .front .l-slider p {
