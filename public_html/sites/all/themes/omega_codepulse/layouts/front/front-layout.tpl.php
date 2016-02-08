@@ -75,6 +75,8 @@
   <div class="l-page-wrapper">
     <header class="l-header" role="banner">
       <div class="l-branding">
+        <span class="contact-tel"><a href="tel:+44 7805 823 528"><i class="fa fa-phone"></i>
+            +44 7805 823 528</a></span>
         <div class="l-logo">
           <?php if ($logo): ?>
             <a href="<?php print $front_page; ?>"
@@ -83,6 +85,7 @@
                                       alt="<?php print t('Home'); ?>"/></a>
           <?php endif; ?>
         </div>
+
         <?php print render($page['branding']); ?>
       </div>
       <div class="l-page-container hori-rule">

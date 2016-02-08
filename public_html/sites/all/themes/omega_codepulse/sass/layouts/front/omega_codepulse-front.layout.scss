@@ -81,7 +81,26 @@ h1.node-title {
     @include grid-span(6,4);
   }
 }
-
+.contact-tel {
+  font-size: 12px;
+  position:absolute;
+  right:120px;
+  a {
+    color:#4D4D4D;
+    text-decoration: none;
+    &:hover {
+      color:#4baedb;
+    }
+  }
+}
+li.email {
+  a{
+    color:#efefef;
+    &:hover{
+      color:#4baedb;
+    }
+  }
+}
 .l-footer {
   position:relative;
   .l-page-container{
@@ -699,6 +718,7 @@ h2 {
 
       .l-branding{
         @include grid-span(12, 1);
+        position:relative;
       }
       .l-menu{
         @include grid-span(12, 1);
