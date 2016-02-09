@@ -69,7 +69,23 @@
   font-weight: normal;
   font-style: normal;
 }
-
+.node--page {
+  ul {
+    li {
+      font-size:14px;
+    }
+  }
+}
+.privacy-statement {
+  display: block;
+  clear: both;
+  a {
+    color:#4d4d4d;
+    &:hover{
+      color:#4baedb;
+    }
+  }
+}
 h1.node-title {
   font-family: cabin-font;
   font-size:22px;
@@ -265,7 +281,7 @@ input[type='text'] {
 }
 .front .l-who {
   background: #efefef;
-  text-align: center;
+  text-align: left;
   padding-top: 1px;
   padding-bottom: 1px;
   p {
@@ -277,7 +293,7 @@ input[type='text'] {
     width:65%;
     margin:0 auto;
     font-size: 14px;
-    text-align:center;
+    text-align:left;
     margin-bottom:75px;
   }
 }
@@ -576,6 +592,12 @@ h2 {
       position:absolute;
       top:0;
       color:#fff;
+    }
+  }
+  #block-block-6,
+  .front {
+    h2 {
+      text-align:center;
     }
   }
   h2 {
@@ -971,7 +993,7 @@ h2 {
   .l-who{
     @include grid-span(12, 1);
     background:#efefef;
-    text-align:center;
+    text-align:left;
   }
   .l-services{
     @include grid-span(12, 1);
