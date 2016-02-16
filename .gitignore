@@ -1,5 +1,8 @@
 # Ignore configuration files that may contain sensitive information.
-sites/*/settings*.php
+public_html/sites/*/*settings.php
+public_html/sites/default/files.tgz
+public_html/sites/default/private-files.tgz
+public_html/sites/default/files
 
 # Ignore paths that contain user-generated content.
 sites/*/files
@@ -15,5 +18,6 @@ public_html/sites/*/private
 /.settings
 /.buildpath
 /.project
-/.idea
-/public_html/.idea
+.idea/
+.idea/*
+.idea/workspace.xml
