@@ -3,6 +3,7 @@ public_html/sites/*/*settings.php
 public_html/sites/default/files.tgz
 public_html/sites/default/private-files.tgz
 public_html/sites/default/files
+public_html/sites/default/*
 
 # Ignore paths that contain user-generated content.
 sites/*/files
