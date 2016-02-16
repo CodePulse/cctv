@@ -40,7 +40,7 @@ function cctv_custom_mail($key, &$message, $params) {
   $message['headers']['Content-Type'] = 'text/html; charset=UTF-8; format=flowed; delsp=yes';
   switch ($key) {
     case 'contact_us':
-      $message['subject'] = 'SITENAME - New \'Contact Us\' Submission';
+      $message['subject'] = 'Fairwood Group - New \'Contact Us\' Submission';
       $message['body'][] = t('Name: !name', array('!name' => $params['name']));
 //      $message['body'][] = '<br>';
       $message['body'][] = t('Email: !email', array('!email' => $params['email']));
