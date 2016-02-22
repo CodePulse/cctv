@@ -98,16 +98,7 @@ h1.node-title {
   }
 }
 .contact-tel {
-  font-size: 12px;
-  position:absolute;
-  right:120px;
-  a {
-    color:#4D4D4D;
-    text-decoration: none;
-    &:hover {
-      color:#4baedb;
-    }
-  }
+display:none;
 }
 li.email {
   a{
@@ -414,6 +405,7 @@ h2 {
   margin-bottom: 40px;
   font-family: cabin-font;
   font-size: 22px;
+  text-align:center;
 }
 #block-block-2 {
   .block__content {
@@ -575,6 +567,7 @@ h2 {
 }
 .l-main {
   padding:10px;
+  float:right;
 }
 .display-menu {
   display:block !important;
@@ -586,6 +579,20 @@ h2 {
   @include grid-span(12, 1);
 }
 @include breakpoint(720px){//small
+  .contact-tel {
+    display:block;
+    font-size: 12px;
+    position:absolute;
+    right:120px;
+    a {
+      color:#4D4D4D;
+      text-decoration: none;
+      &:hover {
+        color:#4baedb;
+      }
+    }
+  }
+
   .view-home-slider {
     position:relative;
     .views-field-field-slider-text {
