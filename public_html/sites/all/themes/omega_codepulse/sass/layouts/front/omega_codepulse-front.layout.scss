@@ -458,7 +458,7 @@ h2 {
   margin-left: 15px;
 }
 .first-level-menu {
-  z-index:5;
+
 }
 .mobile-size .social-icon-selected {
   background:url('../../../images/Icons/social/3x_Retina_HD/Social_dropdown_selected_3x.png') no-repeat 0 0 /33px 33px !important;
@@ -579,6 +579,9 @@ h2 {
 #block-views-services-we-offer-block-1,
 #block-block-4 {
   @include grid-span(12, 1);
+}
+.first-level-menu{
+  z-index:4;
 }
 @include breakpoint(720px){//small
   .contact-tel {
