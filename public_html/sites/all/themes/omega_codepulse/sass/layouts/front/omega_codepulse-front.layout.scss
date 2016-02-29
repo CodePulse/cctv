@@ -578,6 +578,13 @@ h2 {
   z-index:4;
 }
 @include breakpoint(720px){//small
+  .views-slideshow-cycle-main-frame-row-item img{
+    height:auto;
+  }
+  .views-field-field-slider-text .field-content {
+    margin-top: -450px;
+    font-size:55px;
+  }
   .contact-tel {
     display:block;
     font-size: 12px;
@@ -595,7 +602,7 @@ h2 {
   .view-home-slider {
     position:relative;
     .views-field-field-slider-text {
-      position:absolute;
+      position:relative;
       top:0;
       color:#fff;
     }
