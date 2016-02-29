@@ -954,10 +954,8 @@ h2 {
     width: 100%;
   }
   .front .l-slider{
-//    height:auto;
     background:#efefef;
     margin-top:40px;
-    background: #efefef url("/sites/all/themes/omega_codepulse/images/The_City_London.jpg") no-repeat 0 0px / 100% auto;
     min-height:250px;
   }
   .front .l-slider{
@@ -1123,11 +1121,6 @@ h2 {
   .find-us {
     left:60%;
   }
-  .front .l-slider {
-    background: #efefef url("/sites/all/themes/omega_codepulse/images/The_City_London.jpg") no-repeat 0 -100px/100% auto;
-  }
-
-
   }
 
 @include breakpoint(1200px) { //desktop
@@ -1282,9 +1275,6 @@ h2 {
     left:70%;
   }
 
-  .front .l-slider{
-    background:#efefef url("/sites/all/themes/omega_codepulse/images/The_City_London.jpg") no-repeat 0 -305px/100% auto
-  }
   .l-footer {
     position:relative;
     .l-page-container{
